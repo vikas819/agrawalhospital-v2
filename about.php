@@ -35,7 +35,7 @@
                         <div class="col-12">
                             <div class="bottom-section flex g-10">
                                 <div class="image tf-animate-1">
-                                    <img src="image/banner01_1.jpg" data-src="image/banner01_1.jpg" alt="">
+                                    <img src="image/banner00_1.jpg" data-src="image/banner00_1.jpg" alt="">
                                 </div>
                                 <div class="list-item px-mobile-sm">
                                     <div class="about-item style-list">
