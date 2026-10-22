@@ -314,11 +314,11 @@
                             </a>
                         </div>
                     </div>
-                    <div class="nav-megamenu">
+                    <!-- <div class="nav-megamenu">
                         <a href="#canvnasMegamenu" data-bs-toggle="offcanvas" class="megamenu-btn">
                             <i class="icon-megamenu"></i>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </header>
