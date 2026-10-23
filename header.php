@@ -9,8 +9,8 @@
     <meta charset="utf-8" />
     <!-- [if IE ]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><![endif] -->
     <title>Micare - Medical and Health Care HTML Template</title>
-    <meta name="description" content="Micare is a modern, responsive HTML template designed for hospitals, clinics, and healthcare professionals to build professional, SEO-friendly medical websites.">
-    <meta name="keywords" content="medical html template, healthcare website, hospital, clinic, doctor, responsive, bootstrap 5, appointment, dentist, health care, medical landing page">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
     <meta name="author" content="themesflat.com" />
 
     <!-- Mobile Specific Metas -->
