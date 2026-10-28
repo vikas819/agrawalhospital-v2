@@ -6,7 +6,7 @@
                         ENT (Otorhinolaryngology)
                     </h1>
                     <div class="breadkcum">
-                        <h3><a href="index.html" class="link-breadkcum">Home</a></h3>
+                        <h3><a href="index.php" class="link-breadkcum">Home</a></h3>
                         <span class="dot bg-white mx-25"></span>
                         <h3 class="page-breadkcum pl-0">Department</h3>
                     </div>
@@ -81,15 +81,15 @@
                                     </div>
                                     <h5 class="number-phone">
                                         <i class="icon-phone"></i>
-                                        <a href="#">+91-755-4283383</a>
+                                        <a href="tel:+917554283383">+91-755-4283383</a>
                                     </h5>
                                     <h5 class="number-phone">
                                         <i class="icon-phone"></i>
-                                        <a href="#">+91-755-4278190</a>
+                                        <a href="tel:+917554278190">+91-755-4278190</a>
                                     </h5>
                                     <h5 class="number-phone">
                                         <i class="icon-phone"></i>
-                                        <a href="#">+91 8959444999</a>
+                                        <a href="tel:+918959444999">+91-8959444999</a>
                                     </h5>
 
                                 </div>

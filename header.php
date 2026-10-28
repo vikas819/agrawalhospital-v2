@@ -1,3 +1,140 @@
+<?php
+$currentPage = basename($_SERVER['SCRIPT_NAME']);
+$pageTitle = isset($pageTitle) ? $pageTitle . ' | Agrawal Hospital Bhopal' : 'Agrawal Hospital Bhopal | NABH Accredited Multispeciality Hospital';
+
+$menu = [
+    ['Home', [
+        ['Main Home', 'index.php'],
+        ['Home Design 1 — Clinical', 'index-1.php'],
+        ['Home Design 2 — Editorial', 'index-2.php'],
+        ['Home Design 3 — Dark', 'index-3.php'],
+        ['Home Design 4 — Friendly', 'index-4.php'],
+    ]],
+    ['About', [
+        ['About us', 'about.php'],
+        ['Founder &amp; Director', 'founder.php'],
+        ['Managing Director', 'cofounder.php'],
+        ['Our Experts', 'our-experts.php'],
+    ]],
+    ['Departments', [
+        ['Respiratory Medicine', 'respiratory-medicine.php'],
+        ['Obstetrics &amp; Gynaecology', 'obstetrics-gynaecology.php'],
+        ['Emergency &amp; Critical Care', 'emergency-critical-care.php'],
+        ['General Surgery', 'general-surgery.php'],
+        ['General Medicine', 'general-medicine.php'],
+        ['Clinical Haematology', 'clinical-haematology.php'],
+        ['ENT', 'ent.php'],
+        ['Anaesthesiology', 'anaesthesiology.php'],
+    ]],
+    ['Treatments', [
+        ['Asthma Treatment', 'asthma-treatment.php'],
+        ['Chest Specialist', 'chest-specialist.php'],
+        ['Emergency Medicine', 'emergency-medicine.php'],
+        ['Radiology &amp; Radio Diagnosis', 'radiology-radio-diagnosis.php'],
+        ['Surgery', 'surgery.php'],
+        ['Chest and Respiratory', 'chest-respiratory.php'],
+        ['Dietetics', 'dietetics.php'],
+    ]],
+    ['Diagnostics', [
+        ['All Pathological Tests', '#'],
+        ['X-ray', '#'],
+        ['Ultrasound', '#'],
+        ['ECG', '#'],
+        ['Colour Doppler', '#'],
+        ['Pulmonary Function Test', '#'],
+        ['Allergy Testing', '#'],
+        ['Sleep Study', '#'],
+        ['Audiometry', '#'],
+        ['2D Echo', '#'],
+        ['Spirometry', '#'],
+        ['Bronchoscopy', '#'],
+    ]],
+    ['Facilities', 'facilities.php'],
+    ['Explore', [
+        ['Events', '#'],
+        ['Camp', '#'],
+        ['Expert Talks', '#'],
+        ['Challenging Cases Treated', '#'],
+        ['Social Activities &amp; Events', '#'],
+        ['Video Gallery', '#'],
+        ['Hospital', '#'],
+        ['Reviews', '#'],
+    ]],
+    ['Contact', 'contact.php'],
+];
+
+if (!function_exists('render_main_menu')) {
+    function render_main_menu($menu, $currentPage)
+    {
+        echo '<ul class="menu-primary-menu nav-menu-v2">';
+        foreach ($menu as [$label, $target]) {
+            if (is_array($target)) {
+                $active = in_array($currentPage, array_column($target, 1), true);
+                echo '<li class="menu-item menu-item-has-children position-relative nav__item' . ($active ? ' current-menu-item' : '') . '">';
+                echo '<a href="javascript:;" class="item-link body-2 nav__link">' . $label . '</a>';
+                echo '<ul class="sub-menu nav__dropdown">';
+                foreach ($target as [$subLabel, $subUrl]) {
+                    $cls = 'sub-menu-item' . ($subUrl === $currentPage ? ' current' : '');
+                    echo '<li class="' . $cls . '"><a href="' . $subUrl . '" class="item-link-2 body-2">' . $subLabel . '</a></li>';
+                }
+                echo '</ul></li>';
+            } else {
+                $active = $target === $currentPage;
+                echo '<li class="menu-item nav__item' . ($active ? ' current-menu-item' : '') . '"><a href="' . $target . '" class="item-link body-2 nav__link">' . $label . '</a></li>';
+            }
+        }
+        echo '</ul>';
+    }
+}
+
+if (!function_exists('render_mobile_menu')) {
+    function render_mobile_menu($menu, $currentPage)
+    {
+        echo '<ul id="menu-mobile" class="menu">';
+        foreach ($menu as $i => [$label, $target]) {
+            if (is_array($target)) {
+                $id = 'dropdown-menu-' . $i;
+                $active = in_array($currentPage, array_column($target, 1), true);
+                echo '<li class="menu-item menu-item-has-children-mobile' . ($active ? ' current-menu-mobile-item' : '') . '">';
+                echo '<a href="#' . $id . '" data-bs-toggle="collapse" class="collapsed">' . $label . '</a>';
+                echo '<div id="' . $id . '" class="collapse" data-bs-parent="#menu-mobile"><ul class="sub-menu-mobile">';
+                foreach ($target as [$subLabel, $subUrl]) {
+                    echo '<li class="menu-item' . ($subUrl === $currentPage ? ' current-item' : '') . '"><a href="' . $subUrl . '">' . $subLabel . '</a></li>';
+                }
+                echo '</ul></div></li>';
+            } else {
+                echo '<li class="menu-item' . ($target === $currentPage ? ' current-menu-mobile-item' : '') . '"><a href="' . $target . '">' . $label . '</a></li>';
+            }
+        }
+        echo '</ul>';
+    }
+}
+
+if (!function_exists('render_header_right')) {
+    function render_header_right()
+    {
+        ?>
+                <div class="header-right">
+                    <a class="hv2-emergency" href="tel:+918959444999">
+                        <span class="ic"><i class="icon-phone-volume"></i></span>
+                        <span><small>24/7 Emergency</small><b>+91-8959444999</b></span>
+                    </a>
+                    <a class="hv2-book" href="contact.php">Book Appointment <i class="icon-arrow-right"></i></a>
+                    <a class="hv2-call" href="tel:+918959444999" aria-label="Call emergency"><i class="icon-phone-volume"></i></a>
+                    <div class="nav-icon">
+                        <div class="mobile-button nav-item d-xl-none">
+                            <a href="#canvasMobile" data-bs-toggle="offcanvas" aria-label="Open menu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        <?php
+    }
+}
+?>
 <!DOCTYPE html>
 <!--[if IE 8]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
@@ -8,10 +145,10 @@
     <!-- Basic Page Needs -->
     <meta charset="utf-8" />
     <!-- [if IE ]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><![endif] -->
-    <title>Micare - Medical and Health Care HTML Template</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="themesflat.com" />
+    <title><?= $pageTitle ?></title>
+    <meta name="description" content="Agrawal Hospital, Arera Colony, Bhopal — NABH accredited multispeciality hospital for respiratory medicine, obstetrics & gynaecology, surgery and 24/7 emergency & critical care.">
+    <meta name="keywords" content="Agrawal Hospital, Bhopal hospital, chest specialist Bhopal, gynaecologist Bhopal, ICU, emergency, NABH">
+    <meta name="author" content="Agrawal Hospital" />
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -34,6 +171,7 @@
     <link rel="stylesheet" href="css/jquery-ui.min.css">
     <!-- Theme Style -->
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/header-v2.css" />
 
     <!-- Icon -->
     <link rel="stylesheet" type="text/css" href="icons/icomoon/style.css" />
@@ -64,262 +202,47 @@
 
     <div class="wrapper">
         <!-- Top-bar -->
-        <div class="top-bar">
+        <div class="top-bar hv2-topbar">
             <div class="top-bar-inner flex align-items-center justify-content-between mx-30">
-                <div class="tf-tb-left flex align-items-center">
-                    <!-- <span class="text-topbar">Make a call?</span> -->
-                    <div class="top-bar-item phone-topbar">
-                        <i class="icon-phone-volume"></i>
-                        <div class="content" style="font-size: 12px;">
-                            <span>Call : </span>
-                            <a href="#">+91-755-4283383</a> | <a href="#">+91-755-4278190</a> | <a href="#">+91-8959444999</a>
-                        </div>
-                    </div>
-                    <span class="dot-topbar dot bg-paragraph"></span>
-                    <div class="top-bar-item email-topbar">
-                        <i class="icon-envelope"></i>
-                        <div class="content" style="font-size: 12px;">
-                            <span>Email : </span>
-                            <a href="#">info@agrawalhospital.com</a>
-                        </div>
-                    </div>
+                <div class="hv2-tb-left">
+                    <span class="hv2-badge">NABH Accredited</span>
+                    <span class="hv2-tb-item hv2-tb-hide-md"><i class="icon-location-dot"></i>E-3/34, Arera Colony, Bhopal</span>
+                    <span class="hv2-tb-item hv2-tb-hide-lg"><i class="icon-clock"></i>OPD: Mon - Sat, 10 AM - 7 PM &nbsp;·&nbsp; Emergency 24×7</span>
                 </div>
-                <div class="tf-tb-right flex align-items-center">
-                    <div class="top-bar-item time-topbar">
-                        <i class="icon-clock"></i>
-                        <div class="content" style="font-size: 12px;">
-                            <span>Working Hours : </span>
-                            <span class="color-title">Open 24 Hours - 7 Days a Week</span>
-                        </div>
-                    </div>
-                    <!-- <span class="dot-topbar dot bg-paragraph"></span>
-                    <ul class="post-social">
-                        <li><a href="#" class="icon-social"><i class="icon-facebook"></i></a></li>
-                        <li><a href="#" class="icon-social"><i class="icon-twitter"></i></a></li>
-                        <li><a href="#" class="icon-social"><i class="icon-linkedin2"></i></a></li>
-                        <li><a href="#" class="icon-social"><i class="icon-instagram"></i></a></li>
-                    </ul> -->
+                <div class="hv2-tb-right">
+                    <a class="hv2-tb-item hv2-tb-hide-md" href="mailto:info@agrawalhospital.com"><i class="icon-envelope"></i>info@agrawalhospital.com</a>
+                    <a class="hv2-tb-item" href="tel:+917554283383"><i class="icon-phone"></i>+91-755-4283383</a>
+                    <a class="hv2-tb-item hv2-tb-hide-lg" href="tel:+917554278190"><i class="icon-phone"></i>+91-755-4278190</a>
                 </div>
             </div>
         </div><!-- /.top-bar -->
 
-        <!-- Header -->
-        <header class="header header-sticky" id="header-sticky">
+        <!-- Header (sticky copy, shown on scroll up) -->
+        <header class="header header-sticky hv2" id="header-sticky">
             <div class="header-content flex justify-content-between align-items-center mx-30">
                 <div class="header-left flex align-items-center">
                     <div class="logo logo-header">
-                        <a href="index.php">
-                            <img src="image/logo.png" alt="">
-                        </a>
+                        <a href="index.php"><img src="image/logo.png" alt="Agrawal Hospital"></a>
                     </div>
                     <nav class="main-menu" aria-label="Main navigation">
-                        <ul class="menu-primary-menu nav-menu-v2">
-                            <li class="menu-item current-menu-item nav__item">
-                                <a href="index.php" class="item-link body-2 nav__link">Home</a>
-                            </li>
-                            <li class="menu-item menu-item-has-children position-relative nav__item">
-                                <a href="javascript:;" class="item-link body-2 nav__link">About
-                                </a>
-                                <ul class="sub-menu nav__dropdown">
-                                    <li class="sub-menu-item"><a href="about.php" class="item-link-2 body-2">About us</a></li>
-                                    <li class="sub-menu-item"><a href="founder.php" class="item-link-2 body-2">Founder &amp; Director</a></li>
-                                    <li class="sub-menu-item"><a href="cofounder.php" class="item-link-2 body-2">Managing Director</a></li>
-                                    <li class="sub-menu-item"><a href="our-experts.php" class="item-link-2 body-2">Our Experts</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item menu-item-has-children position-relative nav__item">
-                                <a href="javascript:;" class="item-link body-2 nav__link">Departments
-                                </a>
-                                <ul class="sub-menu nav__dropdown">
-                                    <li class="sub-menu-item"><a href="respiratory-medicine.php" class="item-link-2 body-2">Respiratory Medicine</a></li>
-                                    <li class="sub-menu-item"><a href="obstetrics-gynaecology.php" class="item-link-2 body-2">Obstetrics &amp; Gynaecology</a></li>
-                                    <li class="sub-menu-item"><a href="emergency-critical-care.php" class="item-link-2 body-2">Emergency &amp; Critical Care</a></li>
-                                    <li class="sub-menu-item"><a href="general-surgery.php" class="item-link-2 body-2">General Surgery</a></li>
-                                    <li class="sub-menu-item"><a href="general-medicine.php" class="item-link-2 body-2">General Medicine</a></li>
-                                    <li class="sub-menu-item"><a href="clinical-haematology.php" class="item-link-2 body-2">Clinical Haematology</a></li>
-                                    <li class="sub-menu-item"><a href="ent.php" class="item-link-2 body-2">ENT</a></li>
-                                    <li class="sub-menu-item"><a href="anaesthesiology.php" class="item-link-2 body-2">Anaesthesiology</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item menu-item-has-children position-relative nav__item">
-                                <a href="javascript:;" class="item-link body-2 nav__link">Services Treatment
-                                </a>
-                                <ul class="sub-menu nav__dropdown">
-                                    <li class="sub-menu-item"><a href="asthma-treatment.php" class="item-link-2 body-2">Asthma Treatment</a></li>
-                                    <li class="sub-menu-item"><a href="chest-specialist.php" class="item-link-2 body-2">Chest Specialist</a></li>
-                                    <li class="sub-menu-item"><a href="emergency-medicine.php" class="item-link-2 body-2">Emergency Medicine</a></li>
-                                    <li class="sub-menu-item"><a href="radiology-radio-diagnosis.php" class="item-link-2 body-2">Radiology &amp; Radio Diagnosis</a></li>
-                                    <li class="sub-menu-item"><a href="surgery.php" class="item-link-2 body-2">Surgery</a></li>
-                                    <li class="sub-menu-item"><a href="chest-respiratory.php" class="item-link-2 body-2">Chest and Respiratory</a></li>
-                                    <li class="sub-menu-item"><a href="dietetics.php" class="item-link-2 body-2">Dietetics</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item menu-item-has-children position-relative nav__item">
-                                <a href="javascript:;" class="item-link body-2 nav__link">Diagnostics
-                                </a>
-                                <ul class="sub-menu nav__dropdown">
-                                    <li class="sub-menu-item"><a href="pathology.php" class="item-link-2 body-2">All Pathological Tests</a></li>
-                                    <li class="sub-menu-item"><a href="x-ray.php" class="item-link-2 body-2">X-ray</a></li>
-                                    <li class="sub-menu-item"><a href="ultrasound.php" class="item-link-2 body-2">Ultrasound</a></li>
-                                    <li class="sub-menu-item"><a href="ecg.php" class="item-link-2 body-2">ECG</a></li>
-                                    <li class="sub-menu-item"><a href="colour-doppler.php" class="item-link-2 body-2">Colour Doppler</a></li>
-                                    <li class="sub-menu-item"><a href="pulmonary-function-test.php" class="item-link-2 body-2">Pulmonary Function Test</a></li>
-                                    <li class="sub-menu-item"><a href="allergy-testing.php" class="item-link-2 body-2">Allergy Testing</a></li>
-                                    <li class="sub-menu-item"><a href="sleep-study.php" class="item-link-2 body-2">Sleep Study</a></li>
-                                    <li class="sub-menu-item"><a href="audiometry.php" class="item-link-2 body-2">Audiometry</a></li>
-                                    <li class="sub-menu-item"><a href="2d-echo.php" class="item-link-2 body-2">2D Echo</a></li>
-                                    <li class="sub-menu-item"><a href="spirometry.php" class="item-link-2 body-2">Spirometry</a></li>
-                                    <li class="sub-menu-item"><a href="bronchoscopy.php" class="item-link-2 body-2">Bronchoscopy</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item nav__item">
-                                <a href="facilities.php" class="item-link body-2 nav__link">Facilities</a>
-                            </li>
-                            <li class="menu-item menu-item-has-children position-relative nav__item">
-                                <a href="javascript:;" class="item-link body-2 nav__link">Take a look
-                                </a>
-                                <ul class="sub-menu nav__dropdown">
-                                    <li class="sub-menu-item"><a href="events.php" class="item-link-2 body-2">Events</a></li>
-                                    <li class="sub-menu-item"><a href="camp.php" class="item-link-2 body-2">Camp</a></li>
-                                    <li class="sub-menu-item"><a href="expert-talks.php" class="item-link-2 body-2">Expert Talks</a></li>
-                                    <li class="sub-menu-item"><a href="challenging-cases.php" class="item-link-2 body-2">Challenging Cases Treated</a></li>
-                                    <li class="sub-menu-item"><a href="social-activities.php" class="item-link-2 body-2">Social Activities &amp; Events</a></li>
-                                    <li class="sub-menu-item"><a href="video-gallery.php" class="item-link-2 body-2">Video Gallery</a></li>
-                                    <li class="sub-menu-item"><a href="hospital.php" class="item-link-2 body-2">Hospital</a></li>
-                                    <li class="sub-menu-item"><a href="reviews.php" class="item-link-2 body-2">Reviews</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item nav__item">
-                                <a href="contact.php" class="item-link body-2 nav__link">Contact</a>
-                            </li>
-                        </ul>
+                        <?php render_main_menu($menu, $currentPage); ?>
                     </nav>
                 </div>
-                <div class="header-right">
-                    <div class="nav-icon">
-                        <!-- <div class="nav-search nav-item">
-                            <a class="search-btn" href="#canvasSearch" data-bs-toggle="offcanvas">
-                                <i class="icon-magnifying-glass"></i>
-                            </a>
-                        </div> -->
-                        <div class="mobile-button nav-item d-xl-none">
-                            <a href="#canvasMobile" data-bs-toggle="offcanvas">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- <div class="nav-megamenu">
-                        <a href="#canvnasMegamenu" data-bs-toggle="offcanvas" class="megamenu-btn">
-                            <i class="icon-megamenu"></i>
-                        </a>
-                    </div> -->
-                </div>
+                <?php render_header_right(); ?>
             </div>
         </header>
 
-        <header class="header" id="header">
+        <header class="header hv2" id="header">
             <div class="header-content flex justify-content-between align-items-center mx-30">
                 <div class="header-left flex align-items-center">
                     <div class="logo logo-header">
-                        <a href="index.php">
-                            <img src="image/logo.png" alt="">
-                        </a>
+                        <a href="index.php"><img src="image/logo.png" alt="Agrawal Hospital"></a>
                     </div>
                     <nav class="main-menu" aria-label="Main navigation">
-                        <ul class="menu-primary-menu nav-menu-v2">
-                            <li class="menu-item current-menu-item nav__item"><a href="index.php" class="item-link body-2 nav__link">Home</a></li>
-                            <li class="menu-item menu-item-has-children position-relative nav__item">
-                                <a href="javascript:;" class="item-link body-2 nav__link">About</a>
-                                <ul class="sub-menu nav__dropdown">
-                                    <li class="sub-menu-item"><a href="about.php" class="item-link-2 body-2">About us</a></li>
-                                    <li class="sub-menu-item"><a href="founder.php" class="item-link-2 body-2">Founder &amp; Director</a></li>
-                                    <li class="sub-menu-item"><a href="cofounder.php" class="item-link-2 body-2">Managing Director</a></li>
-                                    <li class="sub-menu-item"><a href="our-experts.php" class="item-link-2 body-2">Our Experts</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item menu-item-has-children position-relative nav__item">
-                                <a href="javascript:;" class="item-link body-2 nav__link">Departments</a>
-                                <ul class="sub-menu nav__dropdown">
-                                    <li class="sub-menu-item"><a href="respiratory-medicine.php" class="item-link-2 body-2">Respiratory Medicine</a></li>
-                                    <li class="sub-menu-item"><a href="obstetrics-gynaecology.php" class="item-link-2 body-2">Obstetrics &amp; Gynaecology</a></li>
-                                    <li class="sub-menu-item"><a href="emergency-critical-care.php" class="item-link-2 body-2">Emergency &amp; Critical Care</a></li>
-                                    <li class="sub-menu-item"><a href="general-surgery.php" class="item-link-2 body-2">General Surgery</a></li>
-                                    <li class="sub-menu-item"><a href="general-medicine.php" class="item-link-2 body-2">General Medicine</a></li>
-                                    <li class="sub-menu-item"><a href="clinical-haematology.php" class="item-link-2 body-2">Clinical Haematology</a></li>
-                                    <li class="sub-menu-item"><a href="ent.php" class="item-link-2 body-2">ENT</a></li>
-                                    <li class="sub-menu-item"><a href="anaesthesiology.php" class="item-link-2 body-2">Anaesthesiology</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item menu-item-has-children position-relative nav__item">
-                                <a href="javascript:;" class="item-link body-2 nav__link">Services Treatment</a>
-                                <ul class="sub-menu nav__dropdown">
-                                    <li class="sub-menu-item"><a href="asthma-treatment.php" class="item-link-2 body-2">Asthma Treatment</a></li>
-                                    <li class="sub-menu-item"><a href="chest-specialist.php" class="item-link-2 body-2">Chest Specialist</a></li>
-                                    <li class="sub-menu-item"><a href="emergency-medicine.php" class="item-link-2 body-2">Emergency Medicine</a></li>
-                                    <li class="sub-menu-item"><a href="radiology-radio-diagnosis.php" class="item-link-2 body-2">Radiology &amp; Radio Diagnosis</a></li>
-                                    <li class="sub-menu-item"><a href="surgery.php" class="item-link-2 body-2">Surgery</a></li>
-                                    <li class="sub-menu-item"><a href="chest-respiratory.php" class="item-link-2 body-2">Chest and Respiratory</a></li>
-                                    <li class="sub-menu-item"><a href="dietetics.php" class="item-link-2 body-2">Dietetics</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item menu-item-has-children position-relative nav__item">
-                                <a href="javascript:;" class="item-link body-2 nav__link">Diagnostics</a>
-                                <ul class="sub-menu nav__dropdown">
-                                    <li class="sub-menu-item"><a href="pathology.php" class="item-link-2 body-2">All Pathological Tests</a></li>
-                                    <li class="sub-menu-item"><a href="x-ray.php" class="item-link-2 body-2">X-ray</a></li>
-                                    <li class="sub-menu-item"><a href="ultrasound.php" class="item-link-2 body-2">Ultrasound</a></li>
-                                    <li class="sub-menu-item"><a href="ecg.php" class="item-link-2 body-2">ECG</a></li>
-                                    <li class="sub-menu-item"><a href="colour-doppler.php" class="item-link-2 body-2">Colour Doppler</a></li>
-                                    <li class="sub-menu-item"><a href="pulmonary-function-test.php" class="item-link-2 body-2">Pulmonary Function Test</a></li>
-                                    <li class="sub-menu-item"><a href="allergy-testing.php" class="item-link-2 body-2">Allergy Testing</a></li>
-                                    <li class="sub-menu-item"><a href="sleep-study.php" class="item-link-2 body-2">Sleep Study</a></li>
-                                    <li class="sub-menu-item"><a href="audiometry.php" class="item-link-2 body-2">Audiometry</a></li>
-                                    <li class="sub-menu-item"><a href="2d-echo.php" class="item-link-2 body-2">2D Echo</a></li>
-                                    <li class="sub-menu-item"><a href="spirometry.php" class="item-link-2 body-2">Spirometry</a></li>
-                                    <li class="sub-menu-item"><a href="bronchoscopy.php" class="item-link-2 body-2">Bronchoscopy</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item nav__item"><a href="facilities.php" class="item-link body-2 nav__link">Facilities</a></li>
-                            <li class="menu-item menu-item-has-children position-relative nav__item">
-                                <a href="javascript:;" class="item-link body-2 nav__link">Take a look</a>
-                                <ul class="sub-menu nav__dropdown">
-                                    <li class="sub-menu-item"><a href="events.php" class="item-link-2 body-2">Events</a></li>
-                                    <li class="sub-menu-item"><a href="camp.php" class="item-link-2 body-2">Camp</a></li>
-                                    <li class="sub-menu-item"><a href="expert-talks.php" class="item-link-2 body-2">Expert Talks</a></li>
-                                    <li class="sub-menu-item"><a href="challenging-cases.php" class="item-link-2 body-2">Challenging Cases Treated</a></li>
-                                    <li class="sub-menu-item"><a href="social-activities.php" class="item-link-2 body-2">Social Activities &amp; Events</a></li>
-                                    <li class="sub-menu-item"><a href="video-gallery.php" class="item-link-2 body-2">Video Gallery</a></li>
-                                    <li class="sub-menu-item"><a href="hospital.php" class="item-link-2 body-2">Hospital</a></li>
-                                    <li class="sub-menu-item"><a href="reviews.php" class="item-link-2 body-2">Reviews</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item nav__item"><a href="contact.php" class="item-link body-2 nav__link">Contact</a></li>
-                        </ul>
+                        <?php render_main_menu($menu, $currentPage); ?>
                     </nav>
                 </div>
-                <div class="header-right">
-                    <div class="nav-icon">
-                        <!-- <div class="nav-search nav-item">
-                            <a class="search-btn" href="#canvasSearch" data-bs-toggle="offcanvas">
-                                <i class="icon-magnifying-glass"></i>
-                            </a>
-                        </div> -->
-                        <div class="mobile-button nav-item d-xl-none">
-                            <a href="#canvasMobile" data-bs-toggle="offcanvas">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- <div class="nav-megamenu">
-                        <a href="#canvnasMegamenu" data-bs-toggle="offcanvas" class="megamenu-btn">
-                            <i class="icon-megamenu"></i>
-                        </a>
-                    </div> -->
-                </div>
+                <?php render_header_right(); ?>
             </div>
         </header>
         <!-- /.header -->

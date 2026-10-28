@@ -1,0 +1,389 @@
+<?php
+require_once __DIR__ . '/home-data.php';
+$pageTitle = 'Home Design 1 — Clinical';
+include __DIR__ . '/header.php';
+?>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <style>
+        /* Shared header/footer come from the site template; reset template element styles inside this design. */
+        .hv-1 :is(h1, h2, h3, h4, h5, h6, button, input, select, textarea) { font-family: inherit; }
+        .hv-1 .lead { font-weight: inherit; }
+        .hv-1 { --green: #5fae3c;
+            --green-dark: #3f8a24;
+            --mint: #eef7ea;
+            --navy: #14213d;
+            --ink: #1d2433;
+            --muted: #5d6677;
+            --line: #e6ebf0;
+            --bg: #f7f9fb;
+            --white: #fff;
+            --red: #e23b3b;
+            --radius: 20px;
+            --shadow: 0 10px 30px rgba(20, 33, 61, .08); }
+        .hv-1 * { box-sizing: border-box; margin: 0; padding: 0; }
+        .hv-1 { scroll-behavior: smooth; }
+        .hv-1 { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: var(--ink); background: var(--white); line-height: 1.6; }
+        .hv-1 img { max-width: 100%; display: block; }
+        .hv-1 a { color: inherit; text-decoration: none; }
+        .hv-1 .container { width: min(1200px, 100% - 32px); margin-inline: auto; }
+        .hv-1 .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 26px; border-radius: 999px; font-weight: 700; font-size: 15px; transition: .25s; }
+        .hv-1 .btn-green { background: var(--green); color: #fff; }
+        .hv-1 .btn-green:hover { background: var(--green-dark); transform: translateY(-2px); }
+        .hv-1 .btn-outline { border: 2px solid var(--navy); color: var(--navy); }
+        .hv-1 .btn-outline:hover { background: var(--navy); color: #fff; }
+        .hv-1 .eyebrow { display: inline-block; font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--green-dark); background: var(--mint); padding: 6px 14px; border-radius: 999px; margin-bottom: 16px; }
+        .hv-1 h1, .hv-1 h2, .hv-1 h3 { color: var(--navy); line-height: 1.2; }
+        .hv-1 h2 { font-size: clamp(28px, 4vw, 42px); font-weight: 800; }
+        .hv-1 section { padding: 90px 0; }
+        .hv-1 .section-head { text-align: center; max-width: 680px; margin: 0 auto 50px; }
+        .hv-1 .section-head p { color: var(--muted); margin-top: 12px; }
+        .hv-1 .hero { background: linear-gradient(180deg, var(--mint) 0%, #fff 100%); padding: 70px 0 90px; overflow: hidden; }
+        .hv-1 .hero .container { display: grid; grid-template-columns: 1.05fr .95fr; gap: 60px; align-items: center; }
+        .hv-1 .hero h1 { font-size: clamp(36px, 5.2vw, 62px); font-weight: 800; letter-spacing: -.02em; }
+        .hv-1 .hero h1 em { font-style: normal; color: var(--green); }
+        .hv-1 .hero p.lead { font-size: 18px; color: var(--muted); margin: 22px 0 32px; max-width: 540px; }
+        .hv-1 .hero .actions { display: flex; gap: 14px; flex-wrap: wrap; }
+        .hv-1 .hero .trust { display: flex; gap: 28px; margin-top: 40px; flex-wrap: wrap; }
+        .hv-1 .hero .trust div strong { display: block; font-size: 26px; color: var(--navy); font-weight: 800; }
+        .hv-1 .hero .trust div span { font-size: 13px; color: var(--muted); }
+        .hv-1 .hero-media { position: relative; }
+        .hv-1 .hero-media .photo { border-radius: 28px; overflow: hidden; box-shadow: var(--shadow); aspect-ratio: 1/1; }
+        .hv-1 .hero-media .photo img { width: 100%; height: 100%; object-fit: cover; }
+        .hv-1 .float-card { position: absolute; background: #fff; border-radius: 16px; padding: 14px 18px; box-shadow: var(--shadow); display: flex; align-items: center; gap: 12px; font-size: 14px; }
+        .hv-1 .float-card .ic { width: 42px; height: 42px; border-radius: 12px; display: grid; place-items: center; font-size: 20px; }
+        .hv-1 .float-card strong { display: block; color: var(--navy); }
+        .hv-1 .float-card.f1 { left: -30px; bottom: 50px; }
+        .hv-1 .float-card.f1 .ic { background: var(--mint); }
+        .hv-1 .float-card.f2 { right: -20px; top: 30px; }
+        .hv-1 .float-card.f2 .ic { background: #ffe9e9; }
+        .hv-1 .quick { margin-top: -50px; position: relative; z-index: 2; padding: 0; }
+        .hv-1 .quick .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .hv-1 .quick-card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); transition: .25s; }
+        .hv-1 .quick-card:hover { transform: translateY(-6px); border-color: var(--green); }
+        .hv-1 .quick-card .no { font-size: 14px; font-weight: 800; color: var(--green); }
+        .hv-1 .quick-card h3 { font-size: 19px; margin: 8px 0 10px; }
+        .hv-1 .quick-card p { color: var(--muted); font-size: 14px; margin-bottom: 16px; }
+        .hv-1 .quick-card a { font-weight: 700; color: var(--green-dark); font-size: 14px; }
+        .hv-1 .quick-card.alert { background: var(--navy); border-color: var(--navy); }
+        .hv-1 .quick-card.alert h3 { color: #fff; }
+        .hv-1 .quick-card.alert p { color: #b7c0d3; }
+        .hv-1 .quick-card.alert a { color: #ff8a8a; }
+        .hv-1 .about .container { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .hv-1 .about-img { position: relative; }
+        .hv-1 .about-img img { border-radius: var(--radius); aspect-ratio: 4/3.4; object-fit: cover; width: 100%; }
+        .hv-1 .about-img .badge { position: absolute; right: -16px; bottom: -16px; background: var(--green); color: #fff; padding: 22px 26px; border-radius: 18px; text-align: center; }
+        .hv-1 .about-img .badge strong { display: block; font-size: 34px; font-weight: 800; line-height: 1; }
+        .hv-1 .about-img .badge span { font-size: 13px; }
+        .hv-1 .about p { color: var(--muted); margin-top: 16px; }
+        .hv-1 .checks { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 26px 0 30px; list-style: none; }
+        .hv-1 .checks li { display: flex; gap: 10px; align-items: center; font-weight: 600; font-size: 15px; color: var(--navy); }
+        .hv-1 .checks li::before { content: '✓'; width: 24px; height: 24px; flex: none; border-radius: 50%; background: var(--mint); color: var(--green-dark); display: grid; place-items: center; font-size: 13px; font-weight: 800; }
+        .hv-1 .departments { background: var(--bg); }
+        .hv-1 .dept-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+        .hv-1 .dept-card { background: #fff; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); transition: .3s; display: flex; flex-direction: column; }
+        .hv-1 .dept-card:hover { box-shadow: var(--shadow); transform: translateY(-6px); }
+        .hv-1 .dept-card .thumb { aspect-ratio: 16/10; overflow: hidden; }
+        .hv-1 .dept-card .thumb img { width: 100%; height: 100%; object-fit: cover; transition: .5s; }
+        .hv-1 .dept-card:hover .thumb img { transform: scale(1.07); }
+        .hv-1 .dept-card .body { padding: 22px; display: flex; flex-direction: column; flex: 1; }
+        .hv-1 .dept-card h3 { font-size: 18px; margin-bottom: 8px; }
+        .hv-1 .dept-card p { color: var(--muted); font-size: 14px; flex: 1; }
+        .hv-1 .dept-card .more { margin-top: 14px; font-weight: 700; font-size: 14px; color: var(--green-dark); }
+        .hv-1 .stats { background: var(--navy); color: #fff; padding: 60px 0; }
+        .hv-1 .stats .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; text-align: center; }
+        .hv-1 .stats strong { display: block; font-size: clamp(32px, 4vw, 46px); font-weight: 800; color: #9fe07f; }
+        .hv-1 .stats span { color: #c3cbe0; font-size: 14px; }
+        .hv-1 .conditions .layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: 50px; }
+        .hv-1 .conditions .intro p { color: var(--muted); margin: 14px 0 24px; }
+        .hv-1 .conditions .intro img { border-radius: var(--radius); }
+        .hv-1 .chip-grid { display: flex; flex-wrap: wrap; gap: 10px; align-content: flex-start; }
+        .hv-1 .chip { border: 1px solid var(--line); padding: 10px 16px; border-radius: 999px; font-size: 14px; font-weight: 600; cursor: default; position: relative; transition: .2s; background: #fff; }
+        .hv-1 .chip:hover { background: var(--green); color: #fff; border-color: var(--green); }
+        .hv-1 .chip-detail { margin-top: 24px; padding: 20px 22px; border-radius: 16px; background: var(--mint); min-height: 86px; }
+        .hv-1 .chip-detail strong { color: var(--navy); display: block; }
+        .hv-1 .chip-detail span { color: var(--muted); font-size: 14px; }
+        .hv-1 .doctors { background: var(--bg); }
+        .hv-1 .doc-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; }
+        .hv-1 .doc-card { background: #fff; border-radius: var(--radius); overflow: hidden; text-align: center; border: 1px solid var(--line); transition: .3s; }
+        .hv-1 .doc-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+        .hv-1 .doc-card .ph { aspect-ratio: 1/1.05; overflow: hidden; background: var(--mint); }
+        .hv-1 .doc-card .ph img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+        .hv-1 .doc-card .info { padding: 16px 12px 20px; }
+        .hv-1 .doc-card h3 { font-size: 16px; }
+        .hv-1 .doc-card span { font-size: 13px; color: var(--muted); }
+        .hv-1 .center { text-align: center; margin-top: 40px; }
+        .hv-1 .t-top { display: grid; grid-template-columns: 2fr 1fr; gap: 22px; margin-bottom: 22px; }
+        .hv-1 .t-feature { position: relative; background: linear-gradient(135deg, var(--navy) 0%, #23406b 100%); color: #fff; border-radius: 26px; padding: 46px 48px; overflow: hidden; }
+        .hv-1 .t-feature::before { content: '\201C'; position: absolute; right: 30px; top: -40px; font-size: 260px; line-height: 1; color: rgba(159, 224, 127, .18); font-family: Georgia, serif; }
+        .hv-1 .t-feature .stars { color: #9fe07f; font-size: 20px; letter-spacing: 3px; }
+        .hv-1 .t-feature h3 { color: #fff; font-size: clamp(24px, 2.8vw, 32px); margin: 14px 0 16px; max-width: 560px; }
+        .hv-1 .t-feature p { color: #cdd5e6; font-size: 17px; max-width: 640px; position: relative; }
+        .hv-1 .t-feature .who { display: flex; align-items: center; gap: 14px; margin-top: 28px; }
+        .hv-1 .t-feature .who .av { background: var(--green); color: #fff; }
+        .hv-1 .t-feature .who small { color: #9fb0cc; }
+        .hv-1 .t-summary { background: var(--mint); border-radius: 26px; padding: 34px; display: flex; flex-direction: column; justify-content: space-between; gap: 20px; }
+        .hv-1 .t-summary h3 { font-size: 22px; }
+        .hv-1 .t-summary ul { list-style: none; display: grid; gap: 12px; }
+        .hv-1 .t-summary li { display: flex; justify-content: space-between; align-items: center; background: #fff; padding: 12px 16px; border-radius: 14px; font-weight: 600; font-size: 15px; color: var(--navy); }
+        .hv-1 .t-summary li span { color: var(--green-dark); font-size: 13px; font-weight: 700; }
+        .hv-1 .t-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+        .hv-1 .t-card { background: #fff; border: 1px solid var(--line); border-radius: 22px; padding: 28px; display: flex; flex-direction: column; transition: .3s; }
+        .hv-1 .t-card:hover { border-color: var(--green); box-shadow: var(--shadow); transform: translateY(-4px); }
+        .hv-1 .t-card .head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+        .hv-1 .t-card .stars { color: #f5a623; letter-spacing: 2px; }
+        .hv-1 .t-card .topic { font-size: 12px; font-weight: 700; color: var(--green-dark); background: var(--mint); padding: 4px 10px; border-radius: 999px; }
+        .hv-1 .t-card h4 { color: var(--navy); font-size: 18px; margin-bottom: 8px; }
+        .hv-1 .t-card p { color: var(--muted); font-size: 15px; flex: 1; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
+        .hv-1 .who { display: flex; align-items: center; gap: 12px; margin-top: 20px; padding-top: 18px; border-top: 1px solid var(--line); }
+        .hv-1 .t-feature .who { border-top-color: rgba(255,255,255,.12); }
+        .hv-1 .av { width: 44px; height: 44px; flex: none; border-radius: 50%; display: grid; place-items: center; font-weight: 800; font-size: 15px; background: var(--mint); color: var(--green-dark); }
+        .hv-1 .who strong { display: block; font-size: 15px; }
+        .hv-1 .who small { color: var(--muted); font-size: 13px; }
+        .hv-1 .partners { background: var(--bg); padding: 70px 0; overflow: hidden; }
+        .hv-1 .marquee { display: flex; gap: 20px; width: max-content; animation: scroll 45s linear infinite; }
+        .hv-1 .marquee img { height: 70px; width: auto; background: #fff; border-radius: 12px; padding: 8px 14px; border: 1px solid var(--line); }
+        @keyframes scroll { to { transform: translateX(-50%); } }
+        .hv-1 .cta { padding: 0; margin: 90px 0; }
+        .hv-1 .cta .box { background: linear-gradient(120deg, var(--green) 0%, #2e7d5b 100%); border-radius: 28px; padding: 56px; color: #fff; display: grid; grid-template-columns: 1.3fr 1fr; gap: 30px; align-items: center; }
+        .hv-1 .cta h2 { color: #fff; }
+        .hv-1 .cta p { opacity: .9; margin-top: 10px; }
+        .hv-1 .cta .phones a { display: block; background: rgba(255,255,255,.14); border-radius: 14px; padding: 14px 20px; font-weight: 700; font-size: 18px; margin-bottom: 10px; }
+        .hv-1 .cta .phones a:hover { background: rgba(255,255,255,.25); }
+        @media (max-width: 1100px) {
+        .hv-1 .dept-grid { grid-template-columns: repeat(2, 1fr); }
+        .hv-1 .doc-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+        @media (max-width: 900px) {
+        .hv-1 .hero .container, .hv-1 .about .container, .hv-1 .conditions .layout, .hv-1 .cta .box { grid-template-columns: 1fr; }
+        .hv-1 .float-card.f1 { left: 10px; }
+        .hv-1 .float-card.f2 { right: 10px; }
+        .hv-1 .quick { margin-top: 0; padding-top: 40px; }
+        .hv-1 .quick .grid, .hv-1 .stats .grid { grid-template-columns: 1fr 1fr; }
+        .hv-1 .t-top, .hv-1 .t-grid { grid-template-columns: 1fr; }
+        .hv-1 .t-feature { padding: 34px 26px; }
+        .hv-1 .cta .box { padding: 36px 24px; }
+        }
+        @media (max-width: 600px) {
+        .hv-1 section { padding: 64px 0; }
+        .hv-1 .quick .grid, .hv-1 .dept-grid, .hv-1 .checks { grid-template-columns: 1fr; }
+        .hv-1 .doc-grid { grid-template-columns: 1fr 1fr; }
+        .hv-1 .about-img .badge { right: 10px; bottom: 10px; }
+        }
+        .hv-1 .container { max-width: none; padding-left: 0; padding-right: 0; }
+        </style>
+
+        <main class="hv-page hv-1">
+<section class="hero">
+    <div class="container">
+        <div>
+            <span class="eyebrow">NABH Accredited · Since 2002</span>
+            <h1>Quality medical care for a <em>healthier tomorrow</em></h1>
+            <p class="lead"><?= $hospital['about'] ?></p>
+            <div class="actions">
+                <a class="btn btn-green" href="contact.php">Book an Appointment →</a>
+                <a class="btn btn-outline" href="our-experts.php">Meet our Doctors</a>
+            </div>
+            <div class="trust">
+                <?php foreach (array_slice($stats, 0, 3) as $s): ?>
+                    <div><strong><?= $s['value'] ?></strong><span><?= $s['label'] ?></span></div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+        <div class="hero-media">
+            <div class="photo"><img src="image/hospital.jpg" alt="Agrawal Hospital building, Arera Colony, Bhopal"></div>
+            <div class="float-card f1"><div class="ic">🏅</div><div><strong>NABH Accredited</strong>Quality & patient safety</div></div>
+            <div class="float-card f2"><div class="ic">🚑</div><div><strong>24/7 Emergency</strong>ICU & ambulance</div></div>
+        </div>
+    </div>
+</section>
+
+<section class="quick">
+    <div class="container grid">
+        <?php foreach ($quickHelp as $i => $q): ?>
+            <div class="quick-card<?= $i === 2 ? ' alert' : '' ?>">
+                <div class="no"><?= $q['no'] ?></div>
+                <h3><?= $q['title'] ?></h3>
+                <p><?= $q['desc'] ?></p>
+                <a href="<?= $q['url'] ?>"><?= $q['cta'] ?> →</a>
+            </div>
+        <?php endforeach; ?>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="container">
+        <div class="about-img">
+            <img src="image/icu.jpg" alt="ICU bed with ventilator at Agrawal Hospital">
+            <div class="badge"><strong><?= date('Y') - $hospital['since'] ?>+</strong><span>Years of care</span></div>
+        </div>
+        <div>
+            <span class="eyebrow">About Agrawal Hospital</span>
+            <h2>Where expert care meets compassion</h2>
+            <p><?= $hospital['story'] ?></p>
+            <ul class="checks">
+                <?php foreach ($highlights as $h): ?><li><?= $h ?></li><?php endforeach; ?>
+            </ul>
+            <a class="btn btn-green" href="about.php">Learn More About Us</a>
+        </div>
+    </div>
+</section>
+
+<section class="departments" id="departments">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Departments</span>
+            <h2>Specialised care across every stage of life</h2>
+            <p>Comprehensive healthcare services across multiple specialities, backed by advanced technology and expert medical professionals.</p>
+        </div>
+        <div class="dept-grid">
+            <?php foreach ($departments as $d): ?>
+                <a class="dept-card" href="<?= $d['url'] ?>">
+                    <div class="thumb"><img src="<?= $d['img'] ?>" alt="<?= htmlspecialchars($d['name']) ?>" loading="lazy"></div>
+                    <div class="body">
+                        <h3><?= htmlspecialchars($d['name']) ?></h3>
+                        <p><?= $d['desc'] ?></p>
+                        <span class="more">Read more →</span>
+                    </div>
+                </a>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</section>
+
+<div class="stats">
+    <div class="container grid">
+        <?php foreach ($stats as $s): ?>
+            <div><strong><?= $s['value'] ?></strong><span><?= $s['label'] ?></span></div>
+        <?php endforeach; ?>
+    </div>
+</div>
+
+<section class="conditions">
+    <div class="container layout">
+        <div class="intro">
+            <span class="eyebrow">Respiratory Expertise</span>
+            <h2>Conditions we treat</h2>
+            <p>Comprehensive diagnosis and treatment of all respiratory diseases under the expertise of Dr. P. N. Agrawal.</p>
+            <img src="image/respiratory.jpg" alt="Respiratory medicine" loading="lazy">
+        </div>
+        <div>
+            <div class="chip-grid">
+                <?php foreach ($conditions as $c): ?>
+                    <button class="chip" data-desc="<?= htmlspecialchars($c[1]) ?>"><?= $c[0] ?></button>
+                <?php endforeach; ?>
+            </div>
+            <div class="chip-detail" id="chipDetail">
+                <strong><?= $conditions[0][0] ?></strong>
+                <span><?= $conditions[0][1] ?></span>
+            </div>
+            <div style="margin-top:24px"><a class="btn btn-outline" href="respiratory-medicine.php">Respiratory Medicine →</a></div>
+        </div>
+    </div>
+</section>
+
+<section class="doctors" id="doctors">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Our Experts</span>
+            <h2>Meet our experienced doctors</h2>
+            <p>Our specialists provide expert care across a wide range of medical departments.</p>
+        </div>
+        <div class="doc-grid">
+            <?php foreach ($doctors as $doc): ?>
+                <a class="doc-card" href="<?= $doc['url'] ?? 'our-experts.php' ?>">
+                    <div class="ph"><img src="<?= img($doc['img']) ?>" alt="<?= $doc['name'] ?>" loading="lazy"></div>
+                    <div class="info"><h3><?= $doc['name'] ?></h3><span><?= htmlspecialchars($doc['role']) ?></span></div>
+                </a>
+            <?php endforeach; ?>
+        </div>
+        <div class="center"><a class="btn btn-green" href="our-experts.php">View All Doctors</a></div>
+    </div>
+</section>
+
+<section class="reviews">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Patient Testimonials</span>
+            <h2>Hear from our happy patients</h2>
+        </div>
+        <?php $feature = $testimonials[0]; ?>
+        <div class="t-top">
+            <div class="t-feature">
+                <div class="stars"><?= stars($feature['rating']) ?></div>
+                <h3>“<?= $feature['headline'] ?>”</h3>
+                <p><?= $feature['text'] ?></p>
+                <div class="who">
+                    <div class="av"><?= initials($feature['name']) ?></div>
+                    <div><strong><?= $feature['name'] ?></strong><small><?= $feature['topic'] ?> · Treated by <?= $feature['doctor'] ?></small></div>
+                </div>
+            </div>
+            <div class="t-summary">
+                <h3>What patients mention most</h3>
+                <ul>
+                    <li>Caring, polite staff <span>Most mentioned</span></li>
+                    <li>Hygiene & cleanliness <span>✓</span></li>
+                    <li>Experienced doctors <span>✓</span></li>
+                    <li>Feels like home <span>✓</span></li>
+                </ul>
+                <a class="btn btn-green" href="reviews.php">Read all reviews →</a>
+            </div>
+        </div>
+        <div class="t-grid">
+            <?php foreach (array_slice($testimonials, 1, 6) as $t): ?>
+                <div class="t-card">
+                    <div class="head"><span class="stars"><?= stars($t['rating']) ?></span><span class="topic"><?= $t['topic'] ?></span></div>
+                    <h4><?= $t['headline'] ?></h4>
+                    <p><?= $t['text'] ?></p>
+                    <div class="who">
+                        <div class="av"><?= initials($t['name']) ?></div>
+                        <div><strong><?= $t['name'] ?></strong><small><?= $t['doctor'] ? 'Treated by ' . $t['doctor'] : 'Patient' ?></small></div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</section>
+
+<section class="partners">
+    <div class="container section-head" style="margin-bottom:30px">
+        <span class="eyebrow">TPA Empanelment</span>
+        <h2>Cashless treatment</h2>
+        <p>Cashless facility available for nearly all major TPA providers and insurance companies.</p>
+    </div>
+    <div class="marquee">
+        <?php foreach (array_merge($partners, $partners) as $i => $p): ?>
+            <img src="<?= $p ?>" alt="Insurance partner" loading="lazy">
+        <?php endforeach; ?>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <div class="box">
+            <div>
+                <h2>Need medical help? We're here 24 hours, 7 days a week.</h2>
+                <p><?= $hospital['opd'] ?> · Emergency & ICU always open.</p>
+            </div>
+            <div class="phones">
+                <?php foreach ($hospital['phones'] as $p): ?>
+                    <a href="<?= tel($p) ?>">📞 <?= $p ?></a>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </div>
+</section>
+        </main>
+
+<script>
+    document.querySelectorAll('.chip').forEach(function (chip) {
+        chip.addEventListener('mouseenter', show);
+        chip.addEventListener('click', show);
+        function show() {
+            var box = document.getElementById('chipDetail');
+            box.innerHTML = '<strong>' + chip.textContent + '</strong><span>' + chip.dataset.desc + '</span>';
+        }
+    });
+</script>
+
+<?php include __DIR__ . '/footer.php'; ?>

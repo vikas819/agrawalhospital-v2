@@ -7,7 +7,7 @@
                         Meet Our Doctors
                     </h1>
                     <div class="breadkcum">
-                        <h3><a href="index.html" class="link-breadkcum">Home</a></h3>
+                        <h3><a href="index.php" class="link-breadkcum">Home</a></h3>
                         <span class="dot bg-white"></span>
                         <h3 class="page-breadkcum">Doctors</h3>
                     </div>
@@ -200,7 +200,7 @@
                             <div class="about-item style-desc px-mobile-sm tf-animate-1" data-delay=".3s">
                                 <span class="number-item">1</span>
                                 <div class="item-content">
-                                    <h5 class="title"><a href="#">Hospital Wards</a></h5>
+                                    <h5 class="title"><a href="facilities.php">Hospital Wards</a></h5>
                                     <div class="desc">Deluxe private (fully AC), semi-private and general wards equipped to provide safe, personalized care with advanced monitoring.</div>
                                 </div>
                             </div>
@@ -210,7 +210,7 @@
                             <div class="about-item style-desc px-mobile-sm tf-animate-1" data-delay=".6s">
                                 <span class="number-item">2</span>
                                 <div class="item-content">
-                                    <h5 class="title"><a href="#">Intensive Care Unit</a></h5>
+                                    <h5 class="title"><a href="facilities.php">Intensive Care Unit</a></h5>
                                     <div class="desc">Each bed equipped with central monitor, central oxygen, central suction for constant monitoring and complex respiratory support.</div>
                                 </div>
                             </div>
@@ -220,7 +220,7 @@
                             <div class="about-item style-desc px-mobile-sm tf-animate-4" data-delay=".6s">
                                 <span class="number-item">3</span>
                                 <div class="item-content">
-                                    <h5 class="title"><a href="#">Modular Operation Theatre</a></h5>
+                                    <h5 class="title"><a href="facilities.php">Modular Operation Theatre</a></h5>
                                     <div class="desc">Two ultra-modern operation theatres — one for major surgical procedures and another for minor procedures.</div>
                                 </div>
                             </div>
@@ -230,7 +230,7 @@
                             <div class="about-item style-desc px-mobile-sm tf-animate-4" data-delay=".3s">
                                 <span class="number-item">4</span>
                                 <div class="item-content">
-                                    <h5 class="title"><a href="#">24/7 Emergency</a></h5>
+                                    <h5 class="title"><a href="facilities.php">24/7 Emergency</a></h5>
                                     <div class="desc">Round-the-clock emergency services with ambulance, pharmacy, pathology, X-ray, and blood gas analyzer available 24 hours.</div>
                                 </div>
                             </div>
@@ -240,7 +240,7 @@
                             <div class="about-item style-desc px-mobile-sm tf-animate-4" data-delay=".3s">
                                 <span class="number-item">5</span>
                                 <div class="item-content">
-                                    <h5 class="title"><a href="#">Patient Assistance</a></h5>
+                                    <h5 class="title"><a href="facilities.php">Patient Assistance</a></h5>
                                     <div class="desc">Dedicated staff for patient support at every step. Large air-cooled waiting areas, stretcher lift, and clean drinking water facility.</div>
                                 </div>
                             </div>
@@ -250,7 +250,7 @@
                             <div class="about-item style-desc px-mobile-sm tf-animate-4" data-delay=".3s">
                                 <span class="number-item">6</span>
                                 <div class="item-content">
-                                    <h5 class="title"><a href="#">Pharmacy Department</a></h5>
+                                    <h5 class="title"><a href="facilities.php">Pharmacy Department</a></h5>
                                     <div class="desc">24-hour in-house pharmacy providing all medications. Integral member of the healthcare team for medication process outcomes.</div>
                                 </div>
                             </div>

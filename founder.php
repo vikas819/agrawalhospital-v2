@@ -7,7 +7,7 @@
                         Dr. P. N. Agrawal
                     </h1>
                     <div class="breadkcum">
-                        <h3><a href="index.html" class="link-breadkcum">Home</a></h3>
+                        <h3><a href="index.php" class="link-breadkcum">Home</a></h3>
                         <span class="dot bg-white"></span>
                         <h3 class="page-breadkcum">Founder & Director — Respiratory & Critical Care Expert</h3>
                     </div>
@@ -22,7 +22,7 @@
                     <div class="row rg-70">
                         <div class="col-md-4">
                             <div class="info-doctor-details">
-                                <a href="#" class="image">
+                                <a href="our-experts.php" class="image">
                                     <img src="image/team-item/Dr. P. N. Agrawal.JPG" data-src="image/team-item/Dr. P. N. Agrawal.JPG" alt="Dr. P. N. Agrawal" class="lazyload">
                                 </a>
                             </div>

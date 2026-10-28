@@ -6,7 +6,7 @@
                     Our Facilities
                 </h1>
                 <div class="breadkcum">
-                    <h3><a href="index.html" class="link-breadkcum">Home</a></h3>
+                    <h3><a href="index.php" class="link-breadkcum">Home</a></h3>
                     <span class="dot bg-white mx-25"></span>
                     <h3 class="page-breadkcum pl-0">Our Facilities</h3>
                 </div>

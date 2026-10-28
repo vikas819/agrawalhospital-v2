@@ -6,7 +6,7 @@
                         About Us
                     </h1>
                     <div class="breadkcum text-anime">
-                        <h3><a href="index.html" class="link-breadkcum">Home</a></h3>
+                        <h3><a href="index.php" class="link-breadkcum">Home</a></h3>
                         <span class="dot bg-white mx-27"></span>
                         <h3 class="page-breadkcum pl-0">About Us</h3>
                     </div>
