@@ -1,5 +1,5 @@
 <?php
-// Shared homepage content for the index-1..index-4 design concepts.
+// Shared homepage content for index.php and the index-1 / index-2 design concepts.
 // Content mirrors https://agrawalhospital.com/ so every concept shows the same facts.
 
 function img($path)
@@ -108,13 +108,6 @@ $quickHelp = [
      'desc' => 'Finding professional, highly qualified, and experienced doctors is essential for receiving the best medical treatment.'],
     ['no' => '03', 'title' => 'Need Emergency Ambulance?', 'cta' => 'Call Ambulance', 'url' => tel('+91-8959444999'),
      'desc' => 'In a medical emergency, every second counts. Get a fast, reliable, and fully equipped ambulance.'],
-];
-
-$services = [
-    ['Bronchoscopy', 'bronchoscopy.php'], ['Sleep Study', 'sleep-study.php'], ['Pulmonary Function Test', 'pulmonary-function-test.php'],
-    ['Spirometry', 'spirometry.php'], ['Allergy Testing', 'allergy-testing.php'], ['2D Echo', '2d-echo.php'],
-    ['Colour Doppler', 'colour-doppler.php'], ['Ultrasound', 'ultrasound.php'], ['X-ray', 'x-ray.php'],
-    ['ECG', 'ecg.php'], ['Audiometry', 'audiometry.php'], ['All Pathological Tests', 'pathology.php'],
 ];
 
 $facilityPhotos = [

@@ -7,8 +7,6 @@ $menu = [
         ['Main Home', 'index.php'],
         ['Home Design 1 — Clinical', 'index-1.php'],
         ['Home Design 2 — Editorial', 'index-2.php'],
-        ['Home Design 3 — Dark', 'index-3.php'],
-        ['Home Design 4 — Friendly', 'index-4.php'],
     ]],
     ['About', [
         ['About us', 'about.php'],
