@@ -116,12 +116,12 @@
                                     <div class="desc">
                                         Dietitians provide food and nutrition information, support people in improving their health, and offer advice on nutrition-related matters. They can also tailor diets to help manage conditions such as:
                                     </div>
-                                    <ul class="general-surgery-list" style="list-style: none; padding-left: 0;">
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Diabetes</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Heart disease</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Overweight and obesity</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Cancer</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Food allergies and intolerances</span></li>
+                                    <ul class="check-list">
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Diabetes</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Heart disease</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Overweight and obesity</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Cancer</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Food allergies and intolerances</span></li>
                                     </ul>
                                 </div>
 

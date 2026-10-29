@@ -161,18 +161,17 @@ if (!function_exists('render_header_right')) {
     <link rel="stylesheet" type="text/css" href="css/magnific-popup.min.css" />
     <!-- Swiper -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <!-- Map -->
-    <link rel="stylesheet" href="css/map.min.css">
     <!-- Odometer -->
     <link rel="stylesheet" href="css/odometer-theme-default.css">
-    <!-- Nice Select -->
-    <link rel="stylesheet" href="css/nice-select.css">
-    <!-- Jquery-ui -->
-    <link rel="stylesheet" href="css/jquery-ui.min.css">
     <!-- Theme Style -->
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/header-v2.css" />
+    <link rel="stylesheet" type="text/css" href="css/site.css" />
     <link rel="stylesheet" type="text/css" href="css/media-gallery.css" />
+    <!-- Page-specific stylesheets: set $pageStyles = [...] before including header.php -->
+    <?php foreach ($pageStyles ?? [] as $href): ?>
+    <link rel="stylesheet" href="<?= htmlspecialchars($href) ?>" />
+    <?php endforeach; ?>
 
     <!-- Icon -->
     <link rel="stylesheet" type="text/css" href="icons/icomoon/style.css" />

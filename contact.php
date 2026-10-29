@@ -1,4 +1,7 @@
-<?php include 'header.php'; ?>
+<?php
+$pageStyles = ['css/map.min.css'];
+include 'header.php';
+?>
 
         <div class="page-title mt-30">
              <div class="mx-30">
@@ -76,62 +79,6 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tf-container w-1740" style="display: none;">
-                    <div class="bottom-section flex justify-content-between g-30">
-                        <div class="image img-item img-1 tf-animate-1">
-                            <img src="image/section/img-p-contact-1.jpg" data-src="image/section/img-p-contact-1.jpg" alt="" class="lazyload">
-                        </div>
-
-                        <form id="contactform" class="form-contact-us style-white-3 px-mobile-sm" method="post" action="./contact/contact-process.php">
-                            <div class="heading-form text-center mb-42">
-                                <div class="title text-anime">
-                                    Send Us Message
-                                </div>
-                                <div class="desc text-anime">Strong communication teamwork skills enable collaboration</div>
-                            </div>
-
-                            <fieldset class="item mb-20">
-                                <i class="icon-user"></i>
-                                <input type="text" name="name" id="name" placeholder="Name" required>
-                            </fieldset>
-
-                            <fieldset class="item mb-20">
-                                <i class="icon-envelope"></i>
-                                <input type="email" name="mail" id="mail" placeholder="Email Address" required>
-                            </fieldset>
-
-                            <fieldset class="item mb-20">
-                                <i class="icon-phone-volume-2"></i>
-                                <input type="number" name="phone" id="phone" placeholder="Phone no" required>
-                            </fieldset>
-
-                            <fieldset class="item mb-20">
-                                <i class="icon-globe"></i>
-                                <input type="text" name="website" id="website" placeholder="Website" required>
-                            </fieldset>
-
-                            <fieldset class="item-textarea mb-25">
-                                <i class="icon-envelope-2"></i>
-                                <textarea name="message" id="message" placeholder="Write message..." required></textarea>
-                            </fieldset>
-
-                            <fieldset class="radio-box mb-30">
-                                <input type="checkbox" name="ship" id="ship">
-                                <label class="mb-0 color-paragraph" for="ship">I agree with company terms & condition.</label>
-                            </fieldset>
-
-                            <button type="submit" class="tf-btn">
-                                <span>Send Message</span>
-                                <i class="icon-arrow-right"></i>
-                            </button>
-
-                        </form>
-
-                        <div class="image img-item img-2 tf-animate-4">
-                            <img src="image/section/img-p-contact-2.jpg" data-src="image/section/img-p-contact-2.jpg" alt="" class="lazyload">
                         </div>
                     </div>
                 </div>

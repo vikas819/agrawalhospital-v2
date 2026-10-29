@@ -1,4 +1,7 @@
-        <?php include "header.php"; ?>
+<?php
+$pageStyles = ['css/home.css'];
+include "header.php";
+?>
         
         <?php
         require_once __DIR__ . '/home-data.php';
@@ -21,72 +24,6 @@
              'cta' => ['Call ' . $hospital['emergency'], tel($hospital['emergency'])], 'cta2' => ['Emergency & Critical Care', 'emergency-critical-care.php']],
         ];
         ?>
-        <style>
-            .ah-hero { position: relative; height: clamp(620px, 88vh, 840px); border-radius: 24px; overflow: hidden; background: var(--black-4); color: #fff; isolation: isolate; }
-            .ah-slide { position: absolute; inset: 0; opacity: 0; visibility: hidden; transition: opacity 1s ease, visibility 1s; }
-            .ah-slide.active { opacity: 1; visibility: visible; z-index: 1; }
-            .ah-slide .bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transform: scale(1.12); }
-            .ah-slide.active .bg { animation: ahZoom 9s ease-out forwards; }
-            @keyframes ahZoom { to { transform: scale(1); } }
-            .ah-slide::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(17, 21, 56, .92) 0%, rgba(32, 38, 91, .7) 38%, rgba(32, 38, 91, .1) 72%), linear-gradient(0deg, rgba(17, 21, 56, .85) 0%, transparent 32%); }
-            .ah-content { position: absolute; z-index: 2; left: 0; right: 0; top: 50%; transform: translateY(-58%); }
-            .ah-content .inner { max-width: 660px; }
-            .ah-content .inner > * { opacity: 0; transform: translateY(26px); }
-            .ah-slide.active .inner > * { animation: ahUp .8s cubic-bezier(.2, .7, .2, 1) forwards; }
-            .ah-slide.active .inner > *:nth-child(2) { animation-delay: .15s; }
-            .ah-slide.active .inner > *:nth-child(3) { animation-delay: .3s; }
-            .ah-slide.active .inner > *:nth-child(4) { animation-delay: .45s; }
-            @keyframes ahUp { to { opacity: 1; transform: none; } }
-            .ah-chip { display: inline-flex; align-items: center; gap: 10px; padding: 8px 16px; border-radius: 999px; background: rgba(255, 255, 255, .12); border: 1px solid rgba(255, 255, 255, .2); backdrop-filter: blur(8px); font-size: 14px; font-weight: 600; letter-spacing: .03em; margin-bottom: 22px; }
-            .ah-chip::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--global); box-shadow: 0 0 0 4px rgba(152, 202, 77, .3); }
-            .ah-content .ah-title { color: #fff; font-size: clamp(38px, 5.4vw, 72px); line-height: 1.05; letter-spacing: -.02em; margin-bottom: 22px; }
-            .ah-content .ah-title span { color: var(--global); display: block; }
-            .ah-content p { color: rgba(255, 255, 255, .8); font-size: 18px; line-height: 1.6; max-width: 560px; margin-bottom: 34px; }
-            .ah-btns { display: flex; flex-wrap: wrap; gap: 14px; }
-            .ah-btn { display: inline-flex; align-items: center; gap: 10px; padding: 16px 28px; border-radius: 999px; font-weight: 700; transition: .3s; }
-            .ah-btn.primary { background: var(--global); color: var(--black-4); }
-            .ah-btn.primary:hover { background: #fff; }
-            .ah-btn.ghost { border: 1px solid rgba(255, 255, 255, .45); color: #fff; }
-            .ah-btn.ghost:hover { background: #fff; color: var(--black-4); }
-            .ah-side { position: absolute; z-index: 3; right: 40px; top: 50%; transform: translateY(-62%); display: grid; gap: 14px; width: 250px; }
-            .ah-stat { background: rgba(255, 255, 255, .1); border: 1px solid rgba(255, 255, 255, .18); backdrop-filter: blur(14px); border-radius: 20px; padding: 20px 22px; }
-            .ah-stat strong { display: block; font-size: 34px; line-height: 1.1; color: #fff; }
-            .ah-stat span { font-size: 14px; color: rgba(255, 255, 255, .75); }
-            .ah-stat.call { background: #e5484d; border-color: #e5484d; display: flex; align-items: center; gap: 14px; }
-            .ah-stat.call i { width: 44px; height: 44px; flex: none; border-radius: 50%; background: rgba(255, 255, 255, .2); display: grid; place-items: center; font-style: normal; font-size: 20px; animation: ahRing 1.8s infinite; }
-            @keyframes ahRing { 0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, .5); } 100% { box-shadow: 0 0 0 14px rgba(255, 255, 255, 0); } }
-            .ah-stat.call b { display: block; font-size: 17px; }
-            .ah-stat.call span { color: rgba(255, 255, 255, .9); }
-            .ah-tabs { position: absolute; z-index: 3; left: 0; right: 0; bottom: 0; }
-            .ah-tabs .tf-container { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-            .ah-tab { background: none; border: 0; color: rgba(255, 255, 255, .6); text-align: left; padding: 0 0 30px; cursor: pointer; font: inherit; transition: color .3s; }
-            .ah-tab:hover, .ah-tab.active { color: #fff; }
-            .ah-tab .bar { display: block; height: 3px; background: rgba(255, 255, 255, .22); border-radius: 3px; overflow: hidden; margin-bottom: 14px; }
-            .ah-tab .bar i { display: block; height: 100%; width: 0; background: var(--global); }
-            .ah-tab.done .bar i { width: 100%; }
-            .ah-tab.active .bar i { animation: ahFill 7s linear forwards; }
-            .ah-hero:hover .ah-tab.active .bar i { animation-play-state: paused; }
-            @keyframes ahFill { from { width: 0; } to { width: 100%; } }
-            .ah-tab small { font-size: 13px; font-weight: 700; color: var(--global); margin-right: 8px; }
-            .ah-tab b { font-size: 16px; font-weight: 600; }
-            @media (max-width: 1199px) {
-                .ah-side { display: none; }
-            }
-            @media (max-width: 767px) {
-                .ah-hero { height: 640px; border-radius: 18px; }
-                .ah-slide::after { background: linear-gradient(0deg, rgba(17, 21, 56, .95) 10%, rgba(32, 38, 91, .6) 60%, rgba(32, 38, 91, .35) 100%); }
-                .ah-content { top: auto; bottom: 80px; transform: none; }
-                .ah-content p { font-size: 16px; margin-bottom: 26px; }
-                .ah-btn { padding: 14px 22px; font-size: 15px; }
-                .ah-tabs .tf-container { gap: 8px; }
-                .ah-tab { padding-bottom: 24px; }
-                .ah-tab b { display: none; }
-                .ah-tab .bar { margin-bottom: 8px; }
-            }
-            @media (prefers-reduced-motion: reduce) {
-                .ah-slide.active .bg { animation: none; transform: none; }
-            }
-        </style>
 
         <div class="mt-30 mx-30">
             <section class="ah-hero" id="ahHero" aria-roledescription="carousel" aria-label="Agrawal Hospital highlights">
@@ -275,12 +212,6 @@
                 </div>
             </div>
 
-            <style>
-                .benefit-items .benefit-link { color: inherit; border-bottom: 1px dashed currentColor; transition: color .2s; }
-                .benefit-items .benefit-link:hover { color: var(--global); }
-                .title-counter a { color: inherit; }
-                .title-counter a:hover { color: var(--global); }
-            </style>
             <section class="section-about h-3 tf-spacing-8 mx-30">
                 <div class="tf-container">
                     <div class="row rg-30">
@@ -520,12 +451,6 @@
                             <a href="facilities.php">Facilities</a>
                         </div>
                     </div>
-                    <style>
-                        .treatment-links { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 40px 0 10px; }
-                        .treatment-links .label { font-weight: 700; color: var(--black-4); margin-right: 6px; }
-                        .treatment-links a { padding: 9px 18px; border-radius: 999px; border: 1px solid rgba(32, 38, 91, .15); background: #fff; color: var(--black-4); font-weight: 500; font-size: 15px; transition: .25s; }
-                        .treatment-links a:hover { background: var(--global); border-color: var(--global); color: var(--black-4); }
-                    </style>
                 </div>
             </section>
 
@@ -585,198 +510,6 @@
 
             </section>
 
-            <section class="section-services h-3 tf-spacing-8" style="display:none;">
-                <div class="tf-container">
-                    <div class="heading-section text-center mb-70">
-                        <div class="title mb-30 text-anime">
-                            <h2 class="fw4">Departments & Specialities</h2>
-                            <!-- <h2>for Every Stage of Life</h2> -->
-                        </div>
-                        <h6 class="desc fw4 color-paragraph lsp-0 lh-30 wow fadeInUp" data-wow-delay=".2s">
-                            Comprehensive healthcare services across multiple specialities, backed by <br/>advanced technology and expert medical professionals.
-                        </h6>
-                    </div>
-                </div>
-
-                <div class="tf-container">
-                    <div class="swiper tf-swiper sw-services sw-grid" data-swiper='{
-                            "slidesPerView": 1,
-                            "spaceBetween": 30,
-                            "observer": true,
-                            "observeParents": true,
-                            "pagination": { "el": ".sw-pagination-departments", "clickable": true },
-                            "breakpoints": {
-                                "767": { "slidesPerView": 2, "slidesPerGroup": 2, "spaceBetween": 30, "allowTouchMove": true},
-                                "1150": { 
-                                    "slidesPerView": 4, "slidesPerGroup": 4, "allowTouchMove": false, "spaceBetween": 0}
-                                }
-                            }'>
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="services-item style-bg-black-3 px-mobile-sm wow fadeInUp">
-                                    <div class="icon wow fadeInUp">
-                                        <i class="icon-primary-care"></i>
-                                    </div>
-                                    <h4 class="wow fadeInUp">
-                                        <a href="respiratory-medicine.php" class="title">Respiratory Medicine</a>
-                                    </h4>
-                                    <div class="desc wow fadeInUp">
-                                        Advanced pulmonology with video bronchoscopy, sleep studies, allergy testing, and comprehensive treatment of all respiratory diseases.
-                                    </div>
-                                    <div class="bottom-btn wow fadeInUp">
-                                        <a href="respiratory-medicine.php" class="tf-btn style-small style-yellow-2 hover-boder-white">
-                                            <span>Read more</span>
-                                            <i class="icon-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="services-item style-bg-gray-2 px-mobile-sm wow fadeInUp" data-wow-delay=".1s">
-                                    <div class="icon wow fadeInUp" data-wow-delay=".1s">
-                                        <i class="icon-maternity"></i>
-                                    </div>
-                                    <h4 class="wow fadeInUp" data-wow-delay=".1s">
-                                        <a href="obstetrics-gynaecology.php" class="title">Obstetrics &amp; Gynaecology</a>
-                                    </h4>
-                                    <div class="desc wow fadeInUp" data-wow-delay=".1s">
-                                        Complete maternity care including normal and C-section delivery, high-risk pregnancy management, infertility treatment, and laparoscopic gynaecology.
-                                    </div>
-                                    <div class="bottom-btn wow fadeInUp" data-wow-delay=".1s">
-                                        <a href="obstetrics-gynaecology.php" class="tf-btn style-small style-white hover-boder-color-title">
-                                            <span>Read more</span>
-                                            <i class="icon-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="services-item style-bg-border-3 px-mobile-sm wow fadeInUp" data-wow-delay=".2s">
-                                    <div class="icon wow fadeInUp" data-wow-delay=".2s">
-                                        <i class="icon-emergency"></i>
-                                    </div>
-                                    <h4 class="wow fadeInUp" data-wow-delay=".2s">
-                                        <a href="emergency-critical-care.php" class="title">Emergency &amp; Critical Care</a>
-                                    </h4>
-                                    <div class="desc wow fadeInUp" data-wow-delay=".2s">
-                                        24/7 emergency services with fully-equipped ICU featuring central monitoring, central oxygen, central suction, and ventilator support at each bed.
-                                    </div>
-                                    <div class="bottom-btn wow fadeInUp" data-wow-delay=".2s">
-                                        <a href="emergency-critical-care.php" class="tf-btn style-small style-white hover-boder-color-title">
-                                            <span>Read more</span>
-                                            <i class="icon-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="services-item style-bg-gray-3 px-mobile-sm wow fadeInUp">
-                                    <div class="icon wow fadeInUp">
-                                        <i class="icon-surgery-care"></i>
-                                    </div>
-                                    <h4 class="wow fadeInUp">
-                                        <a href="general-surgery.php" class="title">General Surgery</a>
-                                    </h4>
-                                    <div class="desc wow fadeInUp">
-                                        Expert surgical services including laparoscopic and minimal access surgery, with modular operation theatres furnished with ultra-modern facilities.
-                                    </div>
-                                    <div class="bottom-btn wow fadeInUp">
-                                        <a href="general-surgery.php" class="tf-btn style-small style-white hover-boder-color-title">
-                                            <span>Read more</span>
-                                            <i class="icon-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="services-item style-bg-black-3 px-mobile-sm wow fadeInUp" data-wow-delay=".1s">
-                                    <div class="icon wow fadeInUp" data-wow-delay=".1s">
-                                        <i class="icon-primary-care"></i>
-                                    </div>
-                                    <h4 class="wow fadeInUp" data-wow-delay=".1s">
-                                        <a href="general-medicine.php" class="title">General Medicine</a>
-                                    </h4>
-                                    <div class="desc wow fadeInUp" data-wow-delay=".1s">
-                                        Comprehensive medical care for a wide range of health conditions with expert diagnosis and personalized treatment plans.
-                                    </div>
-                                    <div class="bottom-btn wow fadeInUp" data-wow-delay=".1s">
-                                        <a href="general-medicine.php" class="tf-btn style-small style-yellow-2 hover-boder-white">
-                                            <span>Read more</span>
-                                            <i class="icon-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="services-item style-bg-gray-2 px-mobile-sm wow fadeInUp" data-wow-delay=".2s">
-                                    <div class="icon wow fadeInUp" data-wow-delay=".2s">
-                                        <i class="icon-diagnostic"></i>
-                                    </div>
-                                    <h4 class="wow fadeInUp" data-wow-delay=".2s">
-                                        <a href="clinical-haematology.php" class="title">Clinical Haematology</a>
-                                    </h4>
-                                    <div class="desc wow fadeInUp" data-wow-delay=".2s">
-                                        Specialized diagnosis and treatment of blood disorders with advanced laboratory testing and expert consultation.
-                                    </div>
-                                    <div class="bottom-btn wow fadeInUp" data-wow-delay=".2s">
-                                        <a href="clinical-haematology.php" class="tf-btn style-small style-white hover-boder-color-title">
-                                            <span>Read more</span>
-                                            <i class="icon-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="services-item style-bg-border-3 px-mobile-sm wow fadeInUp">
-                                    <div class="icon wow fadeInUp">
-                                        <i class="icon-specialized"></i>
-                                    </div>
-                                    <h4 class="wow fadeInUp">
-                                        <a href="ent.php" class="title">ENT (Otorhinolaryngology)</a>
-                                    </h4>
-                                    <div class="desc wow fadeInUp">
-                                        Expert treatment of ear, nose, and throat conditions with advanced audiometry and comprehensive ENT care.
-                                    </div>
-                                    <div class="bottom-btn wow fadeInUp">
-                                        <a href="ent.php" class="tf-btn style-small style-white hover-boder-color-title">
-                                            <span>Read more</span>
-                                            <i class="icon-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="services-item style-bg-gray-3 px-mobile-sm wow fadeInUp" data-wow-delay=".1s">
-                                    <div class="icon wow fadeInUp" data-wow-delay=".1s">
-                                        <i class="icon-surgery-care"></i>
-                                    </div>
-                                    <h4 class="wow fadeInUp" data-wow-delay=".1s">
-                                        <a href="anaesthesiology.php" class="title">Anaesthesiology</a>
-                                    </h4>
-                                    <div class="desc wow fadeInUp" data-wow-delay=".1s">
-                                        Expert anaesthesia services for all surgical procedures with dedicated obstetric anaesthesia for safe deliveries and pain management.
-                                    </div>
-                                    <div class="bottom-btn wow fadeInUp" data-wow-delay=".1s">
-                                        <a href="anaesthesiology.php" class="tf-btn style-small style-white hover-boder-color-title">
-                                            <span>Read more</span>
-                                            <i class="icon-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="sw-pagination-departments sw-pagination d-xl-none mt-15 justify-content-center"></div>
-            </section>
-
             <section class="section-services h-5 tf-spacing-2 mx-30">
                 <div class="heading-section style-3 mb-70 style-white">
                     <div class="tf-container">
@@ -791,7 +524,7 @@
                             <div class="col-lg-6">
                                 <div class="right flex align-items-center justify-content-between g-30">
                                     <div class="text wow fadeInUp" data-wow-delay=".2s">
-                                        Comprehensive diagnosis and treatment of all respiratory diseases under the expertise of <a href="founder.php" style="color:inherit;text-decoration:underline">Dr. P. N. Agrawal</a>.
+                                        Comprehensive diagnosis and treatment of all respiratory diseases under the expertise of <a href="founder.php" class="link-underline">Dr. P. N. Agrawal</a>.
                                     </div>
                                     <div class="list-btn flex g-10">
                                     <div class="wow fadeInUp" data-wow-delay=".3s">
@@ -1310,46 +1043,6 @@
                     </div>
                 </div>
                 <?php require_once __DIR__ . '/home-data.php'; ?>
-                <style>
-                    .happy-patients { display: grid; grid-template-columns: 380px minmax(0, 1fr); gap: 30px; align-items: stretch; }
-                    .hp-intro { background: var(--black-4); color: #fff; border-radius: 24px; padding: 44px 36px; display: flex; flex-direction: column; position: relative; overflow: hidden; }
-                    .hp-intro::after { content: '\201C'; position: absolute; right: 18px; bottom: -70px; font-size: 260px; line-height: 1; font-family: Georgia, serif; color: rgba(152, 202, 77, .15); }
-                    .hp-intro .label { display: inline-block; align-self: flex-start; background: rgba(152, 202, 77, .18); color: var(--global); font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; margin-bottom: 18px; }
-                    .hp-intro h2 { color: #fff; font-size: 38px; line-height: 1.15; margin-bottom: 16px; }
-                    .hp-intro p { color: rgba(255, 255, 255, .72); margin-bottom: 24px; }
-                    .hp-intro ul { list-style: none; padding: 0; margin: 0 0 32px; display: grid; gap: 12px; }
-                    .hp-intro li { display: flex; align-items: center; gap: 12px; color: #fff; font-weight: 500; }
-                    .hp-intro li::before { content: '✓'; width: 26px; height: 26px; flex: none; border-radius: 50%; background: var(--global); color: var(--black-4); display: grid; place-items: center; font-size: 13px; font-weight: 800; }
-                    .hp-nav { display: flex; gap: 12px; margin-top: auto; position: relative; z-index: 1; }
-                    .hp-nav button { width: 54px; height: 54px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, .3); background: transparent; color: #fff; font-size: 20px; cursor: pointer; transition: .3s; }
-                    .hp-nav button:hover { background: var(--global); border-color: var(--global); color: var(--black-4); }
-                    .hp-nav button.swiper-button-disabled { opacity: .35; cursor: default; }
-                    .sw-happy { width: 100%; }
-                    .sw-happy .swiper-slide { height: auto; }
-                    .hp-card { height: 100%; background: #fff; border-radius: 24px; padding: 34px 30px 28px; display: flex; flex-direction: column; border: 1px solid transparent; transition: .3s; }
-                    .hp-card:hover { border-color: var(--global); box-shadow: 0 18px 40px rgba(32, 38, 91, .08); }
-                    .hp-card .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
-                    .hp-card .stars { color: #f5a623; letter-spacing: 3px; font-size: 18px; }
-                    .hp-card .topic { font-size: 12px; font-weight: 700; color: var(--black-4); background: var(--border-3); padding: 5px 12px; border-radius: 999px; }
-                    .hp-card .quote-ic { width: 46px; height: 46px; border-radius: 14px; background: var(--global); color: #fff; display: grid; place-items: center; font-family: Georgia, serif; font-size: 34px; line-height: 1; padding-top: 12px; margin-bottom: 16px; }
-                    .hp-card h4 { font-size: 21px; line-height: 1.3; color: var(--black-4); margin-bottom: 10px; }
-                    .hp-card p { color: var(--color-paragraph); margin-bottom: 0; flex: 1; }
-                    .hp-card .who { display: flex; align-items: center; gap: 12px; margin-top: 24px; padding-top: 20px; border-top: 1px dashed rgba(32, 38, 91, .15); }
-                    .hp-card .av { width: 48px; height: 48px; flex: none; border-radius: 50%; background: var(--black-4); color: var(--global); display: grid; place-items: center; font-weight: 700; }
-                    .hp-card .who strong { display: block; color: var(--black-4); }
-                    .hp-card .who small { color: var(--color-paragraph); font-size: 13px; }
-                    .sw-pagination-happy { margin-top: 24px; justify-content: center; }
-                    @media (max-width: 1149px) {
-                        .happy-patients { grid-template-columns: 1fr; }
-                        .hp-intro { padding: 34px 26px; }
-                        .hp-intro h2 { font-size: 30px; }
-                        .hp-intro ul { grid-template-columns: 1fr 1fr; }
-                    }
-                    @media (max-width: 575px) {
-                        .hp-intro ul { grid-template-columns: 1fr; }
-                        .hp-card { padding: 28px 22px 24px; }
-                    }
-                </style>
                 <div class="tf-container">
                     <div class="happy-patients">
                         <div class="hp-intro">

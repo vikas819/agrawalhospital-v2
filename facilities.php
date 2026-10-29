@@ -28,7 +28,7 @@
                                 <h2 class="title mb-30 text-anime">
                                     Hospital Wards
                                 </h2>
-                                <div class="text wow fadeInUp" data-wow-delay=".2s" style="margin-bottom: 30px;">
+                                <div class="text mb-30 wow fadeInUp" data-wow-delay=".2s">
                                     The Agrawal Hospital ICU is a specialized adult medical and surgical care facility for patients who need constant monitoring, intensive nursing care, and complex respiratory support. ICU is centrally air conditioned with 8 cubicles. All of them are equipped with mechanical ventilators, central oxygen&suction, multipara sophisticated bedside monitors and other life support equipments. Our ICU is equipped to provide safe, high-quality, personalized care. 
                                 </div>
                                 <div class="text wow fadeInUp" data-wow-delay=".2s">All of our intensive care nurses have advanced training in the needs of the critically ill patient. Agrawal hospital's extensive benches of physicians are always available for consultation. In addition to a high-technology care plan, we offer encouragement, understanding, respect, care and compassion to the patients and the family members. We make ourselves as accessible as possible to listen your concerns and answer your queries.</div>
@@ -47,7 +47,7 @@
                                 <h2 class="title mb-30 text-anime">
                                     Intensive Care Unit
                                 </h2>
-                                <div class="text wow fadeInUp" data-wow-delay=".2s" style="margin-bottom: 30px;">
+                                <div class="text mb-30 wow fadeInUp" data-wow-delay=".2s">
                                    The Agrawal Hospital ICU is a specialized adult medical and surgical care facility for patients who need constant monitoring, intensive nursing care,and complex respiratory support. ICU is centrally air conditioned with 8 cubicles .All of them are equipped with mechanical ventilators, central oxygen&suction, multipara sophisticated bedside monitors and other life support equipments. Our ICU is equipped to provide safe, high-quality, personalized care. 
                                 </div>
                                 <div class="text wow fadeInUp" data-wow-delay=".2s">All of our intensive care nurses have advanced training in the needs of the critically ill patient. Agrawal hospital’s extensive benches of physicians are always available for consultation. In addition to a high-technology care plan, we offer encouragement, understanding, respect, care and compassion to the patients and the family members. We make ourselves as accessible as possible to listen your concerns and answer your queries.</div>
@@ -75,7 +75,7 @@
                                 <h2 class="title mb-30 text-anime">
                                    Patient Assistance
                                 </h2>
-                                <div class="text wow fadeInUp" data-wow-delay=".2s" style="margin-bottom: 30px;">
+                                <div class="text mb-30 wow fadeInUp" data-wow-delay=".2s">
                                     Agrawal hospital prides itself in following its policy of keeping patient's needs first in every aspect. Our dedicated staff tries to be of assistance at every step of the way to your recovery. We offer Emergency Services, Wheel chair assistance and pharmacy. There is a small cafeteria that serves basic snacks , tea and coffee to the waiting family.At Agrawal Hospital, we pride ourselves on following a firm policy of keeping the patient's needs first in every aspect of care. This commitment guides every decision our team makes, from the moment you enter our premises to the final stages of your recovery. 
                                 </div>
                                 <div class="text wow fadeInUp" data-wow-delay=".2s"> Our dedicated staff strives to be of assistance at every step of the way, believing that healing is not solely about medical treatment but also about the comfort, dignity, and emotional wellbeing of every patient and their family. Whether it is a reassuring word at the reception desk, a prompt response to a call bell, or a gentle explanation of a procedure, our team is trained to anticipate needs and respond with compassion. This patient-first philosophy extends across all departments and is the foundation upon which our hospital's reputation for trustworthy, humane care has been built.</div>
@@ -94,7 +94,7 @@
                                 <h2 class="title mb-30 text-anime">
                                     Department Of Pharmacy
                                 </h2>
-                                <div class="text wow fadeInUp" data-wow-delay=".2s" style="margin-bottom: 30px;">
+                                <div class="text mb-30 wow fadeInUp" data-wow-delay=".2s">
                                     The Department of Pharmacy at Agrawal Hospital is equipped with state-of-the-art facilities and a team of highly qualified pharmacists dedicated to delivering excellence in pharmaceutical care. Our pharmacy operates with a commitment to the highest standards of safety, accuracy, and quality, ensuring that every medication dispensed is handled with precision and care.
 
                                 </div>
@@ -123,7 +123,7 @@
                                 <h2 class="title mb-30 text-anime">
                                    Ambulance Service
                                 </h2>
-                                <div class="text wow fadeInUp" data-wow-delay=".2s" style="margin-bottom: 30px;">
+                                <div class="text mb-30 wow fadeInUp" data-wow-delay=".2s">
                                    The ambulance service is an integral part of Emergency and Critical Care Health centers, serving as the vital first link between patients and definitive medical care. At Agrawal Hospital, our ambulances are equipped to handle most complex emergencies and are available to our patients 24 hours of the day and night, ensuring expert help is always just a call away. These ambulances carry, as standard equipment, a ventilator, a defibrillator, oxygen, and all the other life-saving drugs necessary to stabilise patients during transport. 
                                 </div>
                                 <div class="text wow fadeInUp" data-wow-delay=".2s">

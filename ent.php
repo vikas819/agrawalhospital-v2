@@ -121,12 +121,12 @@
                                         ENT surgeons treat a very wide range of conditions. These include:
                                     </div>
                                 </div>
-                                <ul class="general-surgery-list" style="list-style: none; padding-left: 0;">
-                                    <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px;color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Ear conditions</span></li>
-                                    <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px;color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Nose conditions</span></li>
-                                    <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px;color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Throat conditions</span></li>
-                                    <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px;color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Head and neck conditions</span></li>
-                                    <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px;color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Facial cosmetic surgery</span></li>
+                                <ul class="check-list">
+                                    <li><i class="icon-check" aria-hidden="true"></i><span>Ear conditions</span></li>
+                                    <li><i class="icon-check" aria-hidden="true"></i><span>Nose conditions</span></li>
+                                    <li><i class="icon-check" aria-hidden="true"></i><span>Throat conditions</span></li>
+                                    <li><i class="icon-check" aria-hidden="true"></i><span>Head and neck conditions</span></li>
+                                    <li><i class="icon-check" aria-hidden="true"></i><span>Facial cosmetic surgery</span></li>
                                 </ul>
 
                                 </div>

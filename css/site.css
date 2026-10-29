@@ -1,0 +1,9 @@
+/* Shared components used across inner pages */
+
+/* Ticked bullet list: <ul class="check-list"><li><i class="icon-check"></i><span>…</span></li></ul> */
+.check-list { list-style: none; padding-left: 0; }
+.check-list li { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph); }
+.check-list li i { flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global); }
+
+/* Inline text link that inherits the surrounding colour */
+.link-underline { color: inherit; text-decoration: underline; }

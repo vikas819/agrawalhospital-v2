@@ -19,7 +19,7 @@
                                     Clinical Services
                                     <i class="icon-chevron-right"></i>
                                 </h5>
-                                <div class="tf-collapse-content" style="display: unset;">
+                                <div class="tf-collapse-content">
                                     <ul>
                                         <li class="support-item-footer">
                                             <a href="respiratory-medicine.php">Respiratory Medicine</a>
@@ -65,7 +65,7 @@
                                     Quick Links
                                     <i class="icon-chevron-right"></i>
                                 </h5>
-                                <div class="tf-collapse-content" style="display: unset;">
+                                <div class="tf-collapse-content">
                                     <ul>
                                         <li class="support-item-footer"><a href="about.php">About Us</a></li>
                                         <li class="support-item-footer"><a href="our-experts.php">Our Experts</a></li>

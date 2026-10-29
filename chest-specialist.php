@@ -116,14 +116,14 @@
                                     <div class="desc">
                                         The following symptoms may be related to a lung condition. A pulmonary specialist may be helpful:
                                     </div>
-                                    <ul class="general-surgery-list" style="list-style: none; padding-left: 0;">
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Chest pain or tightness</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Dizziness, lightheadedness, or fainting</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Difficulty breathing, especially during exercise</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Fatigue</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Wheezing</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Recurring or chronic bronchitis or colds that affect your respiratory system</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Asthma that is not well controlled or has unidentified triggers</span></li>
+                                    <ul class="check-list">
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Chest pain or tightness</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Dizziness, lightheadedness, or fainting</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Difficulty breathing, especially during exercise</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Fatigue</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Wheezing</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Recurring or chronic bronchitis or colds that affect your respiratory system</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Asthma that is not well controlled or has unidentified triggers</span></li>
                                 </ul>
                                 </div>
                                 <div class="mb-44">
@@ -132,16 +132,16 @@
                                         Your doctor may treat chest pain with medication, noninvasive procedures, surgery, or a combination of these methods. Treatment depends on the cause and severity of the pain.
                                     </div>
                                     <h5 class="title mb-20">Treatments for heart-related causes of chest pain may include:</h5>
-                                    <ul class="general-surgery-list" style="list-style: none; padding-left: 0;">
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Medications, which may include nitroglycerin and other medicines that open partially closed arteries, clot-busting drugs, or blood thinners</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Cardiac catheterization, which may involve using balloons or stents to open blocked arteries</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Surgical repair of the arteries, also known as coronary artery bypass grafting or bypass surgery</span></li>
+                                    <ul class="check-list">
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Medications, which may include nitroglycerin and other medicines that open partially closed arteries, clot-busting drugs, or blood thinners</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Cardiac catheterization, which may involve using balloons or stents to open blocked arteries</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Surgical repair of the arteries, also known as coronary artery bypass grafting or bypass surgery</span></li>
                                     </ul>
                                     <h5 class="title mb-20">Treatments for other causes of chest pain may include:</h5>
-                                    <ul class="general-surgery-list" style="list-style: none; padding-left: 0;">
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Re-inflation of a collapsed lung, which a doctor may perform by inserting a chest tube or related device</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Antacids or certain procedures to treat symptoms of acid reflux and heartburn</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Anti-anxiety medications for chest pain related to panic attacks</span></li>
+                                    <ul class="check-list">
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Re-inflation of a collapsed lung, which a doctor may perform by inserting a chest tube or related device</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Antacids or certain procedures to treat symptoms of acid reflux and heartburn</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Anti-anxiety medications for chest pain related to panic attacks</span></li>
                                     </ul>
                                 </div>
 

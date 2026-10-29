@@ -116,31 +116,31 @@
                                     <div class="desc">
                                         Our services include diagnosis and treatment of:
                                     </div>
-                                    <ul class="general-surgery-list" style="list-style: none; padding-left: 0;">
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Airway obstruction</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Asthma</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Autoimmune lung disease</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Chronic cough</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Chronic respiratory failure</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Chronic obstructive pulmonary disease (COPD)</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Alpha-1 antitrypsin deficiency</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Chronic bronchitis</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Emphysema</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Cystic fibrosis</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Dyspnea (shortness of breath)</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Eosinophilic lung disorders</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Hypersensitivity pneumonitis</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Interstitial lung diseases (ILD)</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Familial pulmonary fibrosis</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Lung cancer</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Lung fibrosis</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Lung nodules</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Lymphangioleiomyomatosis (LAM)</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Pleural effusion</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Pneumonia</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Pulmonary embolism</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Pulmonary hypertension</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Respiratory failure</span></li>
+                                    <ul class="check-list">
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Airway obstruction</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Asthma</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Autoimmune lung disease</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Chronic cough</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Chronic respiratory failure</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Chronic obstructive pulmonary disease (COPD)</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Alpha-1 antitrypsin deficiency</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Chronic bronchitis</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Emphysema</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Cystic fibrosis</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Dyspnea (shortness of breath)</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Eosinophilic lung disorders</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Hypersensitivity pneumonitis</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Interstitial lung diseases (ILD)</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Familial pulmonary fibrosis</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Lung cancer</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Lung fibrosis</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Lung nodules</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Lymphangioleiomyomatosis (LAM)</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Pleural effusion</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Pneumonia</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Pulmonary embolism</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Pulmonary hypertension</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Respiratory failure</span></li>
                                     </ul>
                                 </div>
 

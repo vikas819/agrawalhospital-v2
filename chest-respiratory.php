@@ -116,35 +116,35 @@
                                     <div class="desc">
                                         Procedures offered include:
                                     </div>
-                                    <ul class="general-surgery-list" style="list-style: none; padding-left: 0;">
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Open appendicectomy</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Laparoscopic appendicectomy</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Hernioplasty</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Inguinal hernia</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Umbilical hernia</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Herniorrhaphy with mesh</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Open cholecystectomy</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Laparoscopic cholecystectomy</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Simple mastectomy</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Radical mastectomy</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Fissure dilatation</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Low fistula repair</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>High fistula repair</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Hemithyroidectomy</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Total thyroidectomy</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Lipoma excision</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Hydrocele</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Haemorrhoidectomy</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>ERCP</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Gastrectomy</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Hemicolectomy</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Hiatus hernia repair</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Variceal banding</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Laparotomy</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Duodenal ulcer (DU) closure</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Transurethral resection of the prostate (TURP)</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Septoplasty</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Tonsillectomy</span></li>
+                                    <ul class="check-list">
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Open appendicectomy</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Laparoscopic appendicectomy</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Hernioplasty</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Inguinal hernia</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Umbilical hernia</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Herniorrhaphy with mesh</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Open cholecystectomy</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Laparoscopic cholecystectomy</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Simple mastectomy</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Radical mastectomy</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Fissure dilatation</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Low fistula repair</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>High fistula repair</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Hemithyroidectomy</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Total thyroidectomy</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Lipoma excision</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Hydrocele</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Haemorrhoidectomy</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>ERCP</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Gastrectomy</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Hemicolectomy</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Hiatus hernia repair</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Variceal banding</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Laparotomy</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Duodenal ulcer (DU) closure</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Transurethral resection of the prostate (TURP)</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Septoplasty</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Tonsillectomy</span></li>
                                     </ul>
                                 </div>
 

@@ -119,17 +119,17 @@
                                     <div class="desc">
                                         Through extensive clinical work and related research, diagnostic radiologists may specialize in areas such as:
                                     </div>
-                                    <ul class="general-surgery-list" style="list-style: none; padding-left: 0;">
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Breast imaging (mammograms)</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Cardiovascular radiology (heart and circulatory system)</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Chest radiology (heart and lungs)</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Emergency radiology</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Gastrointestinal radiology (stomach, intestines, and abdomen)</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Genitourinary radiology (reproductive and urinary systems)</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Head and neck radiology</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Musculoskeletal radiology (muscles and skeleton)</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Neuroradiology (brain and nervous system; head, neck, and spine)</span></li>
-                                        <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; color: var(--color-paragraph);"><i class="icon-check" aria-hidden="true" style="flex: 0 0 auto; margin-top: 4px; font-size: 14px; color: var(--global);"></i><span>Pediatric radiology (imaging of children)</span></li>
+                                    <ul class="check-list">
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Breast imaging (mammograms)</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Cardiovascular radiology (heart and circulatory system)</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Chest radiology (heart and lungs)</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Emergency radiology</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Gastrointestinal radiology (stomach, intestines, and abdomen)</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Genitourinary radiology (reproductive and urinary systems)</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Head and neck radiology</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Musculoskeletal radiology (muscles and skeleton)</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Neuroradiology (brain and nervous system; head, neck, and spine)</span></li>
+                                        <li><i class="icon-check" aria-hidden="true"></i><span>Pediatric radiology (imaging of children)</span></li>
                                     </ul>
                                 </div>
 
