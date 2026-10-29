@@ -51,12 +51,12 @@ $menu = [
     ]],
     ['Facilities', 'facilities.php'],
     ['Explore', [
-        ['Events', '#'],
+        ['Events &amp; News', 'events-and-news.php'],
         ['Camp', '#'],
         ['Expert Talks', '#'],
         ['Challenging Cases Treated', '#'],
         ['Social Activities &amp; Events', '#'],
-        ['Video Gallery', '#'],
+        ['Video Gallery', 'video-gallery.php'],
         ['Hospital', '#'],
         ['Reviews', '#'],
     ]],
@@ -172,6 +172,7 @@ if (!function_exists('render_header_right')) {
     <!-- Theme Style -->
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/header-v2.css" />
+    <link rel="stylesheet" type="text/css" href="css/media-gallery.css" />
 
     <!-- Icon -->
     <link rel="stylesheet" type="text/css" href="icons/icomoon/style.css" />

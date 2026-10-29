@@ -70,12 +70,12 @@
                                         <li class="support-item-footer"><a href="about.php">About Us</a></li>
                                         <li class="support-item-footer"><a href="our-experts.php">Our Experts</a></li>
                                         <li class="support-item-footer"><a href="our-experts.php">Facilities</a></li>
-                                        <li class="support-item-footer"><a href="#">Events</a></li>
+                                        <li class="support-item-footer"><a href="events-and-news.php">Events &amp; News</a></li>
                                         <li class="support-item-footer"><a href="#">Camp</a></li>
                                         <li class="support-item-footer"><a href="#">Expert Talks</a></li>
                                         <li class="support-item-footer"><a href="#">Challenging Cases Treated</a></li>
                                         <li class="support-item-footer"><a href="#">Social Activities &amp; Events</a></li>
-                                        <li class="support-item-footer"><a href="#">Video Gallery</a></li>
+                                        <li class="support-item-footer"><a href="video-gallery.php">Video Gallery</a></li>
                                         <li class="support-item-footer"><a href="#">Hospital View</a></li>
                                         <li class="support-item-footer"><a href="#">Patient Reviews</a></li>
                                         <li class="support-item-footer"><a href="contact.php">Contact Us</a></li>
@@ -225,6 +225,7 @@
     <script src="js/simpleParallaxVanilla.js"></script>
 
     <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/media-gallery.js"></script>
     <!-- /Javascript -->
 
 

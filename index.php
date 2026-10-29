@@ -1406,6 +1406,83 @@
                 </div>
             </section>
 
+            <?php
+            require_once __DIR__ . '/includes/media-data.php';
+            $videoTitles = array_column($videos, 1, 0);
+            ?>
+            <div class="mx-30">
+                <section class="yt-section" id="youtube">
+                    <div class="tf-container">
+                        <div class="media-head">
+                            <div class="heading-section">
+                                <span class="label">YouTube Channel</span>
+                                <div class="title text-anime">
+                                    <h2>Watch &amp; Learn from Our Experts</h2>
+                                </div>
+                                <p class="desc color-paragraph wow fadeInUp" data-wow-delay=".2s">
+                                    Health talks, interviews and live procedure demonstrations on asthma, COPD, lung health and more.
+                                </p>
+                            </div>
+                            <div class="media-actions">
+                                <a href="video-gallery.php" class="tf-btn">
+                                    <span>View All Videos</span>
+                                    <i class="icon-arrow-right"></i>
+                                </a>
+                                <a href="<?= $youtubeChannel ?>" class="tf-btn style-border hover-bg-black-4" target="_blank" rel="noopener">
+                                    <span>YouTube Channel</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="yt-grid">
+                            <?php foreach ($homeVideoIds as $id): ?>
+                                <?php $watch = 'https://www.youtube.com/watch?v=' . $id; $title = htmlspecialchars($videoTitles[$id]); ?>
+                                <article class="yt-card">
+                                    <a href="<?= $watch ?>" class="yt-thumb js-yt-popup" aria-label="Play: <?= $title ?>">
+                                        <img src="https://i.ytimg.com/vi/<?= $id ?>/hqdefault.jpg" alt="" loading="lazy">
+                                        <span class="yt-play"></span>
+                                    </a>
+                                    <div class="yt-body">
+                                        <h3><a href="<?= $watch ?>" class="js-yt-popup"><?= $title ?></a></h3>
+                                        <span class="yt-meta">Agrawal Hospital Bhopal</span>
+                                    </div>
+                                </article>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section class="tf-spacing-2 mx-30" id="events">
+                <div class="tf-container">
+                    <div class="media-head">
+                        <div class="heading-section">
+                            <span class="label">Event &amp; News</span>
+                            <div class="title text-anime">
+                                <h2>Camps, Talks &amp; Happenings</h2>
+                            </div>
+                            <p class="desc color-paragraph wow fadeInUp" data-wow-delay=".2s">
+                                Free health camps, expert talks and community programmes by the Agrawal Hospital team.
+                            </p>
+                        </div>
+                        <div class="media-actions">
+                            <a href="events-and-news.php" class="tf-btn">
+                                <span>View All Events</span>
+                                <i class="icon-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ev-grid is-home js-ev-gallery">
+                        <?php foreach ($newsHighlights as [$src, $tag]): ?>
+                            <a href="<?= $src ?>" class="ev-item" title="<?= $tag ?>">
+                                <img src="<?= $src ?>" alt="Agrawal Hospital <?= $tag ?>" loading="lazy">
+                                <span class="ev-tag"><?= $tag ?></span>
+                                <span class="ev-zoom" aria-hidden="true">+</span>
+                            </a>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+            </section>
+
             <section class="client-partners-section tf-spacing-2 mx-30" id="tpa">
                 <div class="tf-container">
                     <div class="heading-section mb-70 text-center">
