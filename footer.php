@@ -69,15 +69,15 @@
                                     <ul>
                                         <li class="support-item-footer"><a href="about.php">About Us</a></li>
                                         <li class="support-item-footer"><a href="our-experts.php">Our Experts</a></li>
-                                        <li class="support-item-footer"><a href="our-experts.php">Facilities</a></li>
+                                        <li class="support-item-footer"><a href="facilities.php">Facilities</a></li>
                                         <li class="support-item-footer"><a href="events-and-news.php">Events &amp; News</a></li>
-                                        <li class="support-item-footer"><a href="#">Camp</a></li>
-                                        <li class="support-item-footer"><a href="#">Expert Talks</a></li>
-                                        <li class="support-item-footer"><a href="#">Challenging Cases Treated</a></li>
-                                        <li class="support-item-footer"><a href="#">Social Activities &amp; Events</a></li>
+                                        <li class="support-item-footer"><a href="camp.php">Camp</a></li>
+                                        <li class="support-item-footer"><a href="expert-talks.php">Expert Talks</a></li>
+                                        <li class="support-item-footer"><a href="challenging-cases.php">Challenging Cases Treated</a></li>
+                                        <li class="support-item-footer"><a href="social-activities.php">Social Activities &amp; Events</a></li>
                                         <li class="support-item-footer"><a href="video-gallery.php">Video Gallery</a></li>
-                                        <li class="support-item-footer"><a href="#">Hospital View</a></li>
-                                        <li class="support-item-footer"><a href="#">Patient Reviews</a></li>
+                                        <li class="support-item-footer"><a href="hospital.php">Hospital View</a></li>
+                                        <li class="support-item-footer"><a href="reviews.php">Patient Reviews</a></li>
                                         <li class="support-item-footer"><a href="contact.php">Contact Us</a></li>
                                     </ul>
                                 </div>

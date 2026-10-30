@@ -103,13 +103,19 @@
 .hp-card .who strong { display: block; color: var(--black-4); }
 .hp-card .who small { color: var(--color-paragraph); font-size: 13px; }
 .sw-pagination-happy { margin-top: 24px; justify-content: center; }
+/* Reviews page: same cards as the homepage slider, laid out as a grid next to a sticky intro. */
+.happy-patients.is-page { align-items: start; }
+.happy-patients.is-page .hp-intro { position: sticky; top: 120px; }
+.hp-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
 @media (max-width: 1149px) {
     .happy-patients { grid-template-columns: 1fr; }
+    .happy-patients.is-page .hp-intro { position: static; }
     .hp-intro { padding: 34px 26px; }
     .hp-intro h2 { font-size: 30px; }
     .hp-intro ul { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 575px) {
     .hp-intro ul { grid-template-columns: 1fr; }
+    .hp-grid { grid-template-columns: 1fr; }
     .hp-card { padding: 28px 22px 24px; }
 }
